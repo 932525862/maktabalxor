@@ -3,24 +3,52 @@
 
 @import "tailwindcss";
 
-*{
-    font-family: 'Averta', sans-serif;
+* {
+  font-family: "Averta", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'TT Norms', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "TT Norms", sans-serif;
 }
 
-.container{
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-@theme{
-    --color-custom-red: #800C3A;
-    --color-custom-green: #0D684D;
-    --color-custom-orange: #D58044;
-    --color-custom-dark: #05184C;
-    --color-custom-blue: #8CB1CD;
+@theme {
+  --color-custom-red: #800c3a;
+  --color-custom-green: #0d684d;
+  --color-custom-orange: #d58044;
+  --color-custom-dark: #05184c;
+  --color-custom-blue: #8cb1cd;
+}
+
+.ant-float-btn-group {
+  button {
+    background-color: #05184c;
+    width: 60px;
+    height: 60px;
+  }
+
+  .ant-float-btn-group-wrap {
+    margin-bottom: 16px;
+  }
+
+  .ant-float-btn-body {
+    background-color: transparent;
+
+    .ant-float-btn-icon {
+      span {
+        color: #fff;
+        font-size: 22px;
+      }
+    }
+  }
 }
