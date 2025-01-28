@@ -1,5 +1,5 @@
-const CatalogPage = () => {
+const NewsPage = () => {
   return <div>CatalogPage</div>;
 };
 
-export default CatalogPage;
+export default NewsPage;
