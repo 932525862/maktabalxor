@@ -1,40 +1,52 @@
-import heroImage1 from "../../../../assets/hero/hero1.jpg";
-import heroImage2 from "../../../../assets/hero/hero2.jpg";
-import heroImage3 from "../../../../assets/hero/hero3.jpg";
-import heroImage4 from "../../../../assets/hero/hero4.jpg";
+import { Carousel } from "antd";
+import hero1 from "../../../../assets/hero/hero1.jpg";
+import hero2 from "../../../../assets/hero/hero2.jpg";
+import hero3 from "../../../../assets/hero/hero3.jpg";
+import hero4 from "../../../../assets/hero/hero4.jpg";
 
 const Hero = () => {
   return (
-    <section className="bg-[url(./assets/img1.jpg)]">
-      <div className="container">
-        <div className="flex justify-between items-center gap-x-20 h-[600px]">
-          <div className="max-w-[696px] mb-20">
-            <h1 className="text-[46px] leading-[64px] font-bold uppercase text-[#242424] mb-5">
-              EXPORT OF NUTS, DRIED FRUITS, AND LEGUMES FROM UZBEKISTAN
-            </h1>
-            <p className="text-[18px] font-normal leading-[32px]">
-              We supply dried fruits, legumes, and nuts from Uzbekistan. We
-              offer customized delivery terms and full coverage for any defects
-              in the product.
-            </p>
-          </div>
-
-          <div className="grid gap-2 grid-cols-2 h-max w-1/2">
-            <div>
-              <img src={heroImage1} alt="milmax product image" />
-            </div>
-            <div>
-              <img src={heroImage2} alt="milmax product image" />
-            </div>
-            <div>
-              <img src={heroImage4} alt="milmax product image" />
-            </div>
-            <div>
-              <img src={heroImage3} alt="milmax product image" />
-            </div>
-          </div>
+    <section className="">
+      <div className="container relative">
+        <div className="absolute top-20 z-10 left-5">
+          <h1 className="text-[46px] font-bold text-white max-w-[696px] leading-[64px]">EXPORT OF NUTS, DRIED FRUITS, AND LEGUMES FROM UZBEKISTAN</h1>
+          <p className="max-w-[696px] text-[18px] font-normal leading-[32px] text-white">
+            We supply dried fruits, legumes, and nuts from Uzbekistan. We offer
+            customized delivery terms and full coverage for any defects in the
+            product.
+          </p>
         </div>
       </div>
+      <Carousel autoplay>
+        <div className="h-[80vh]">
+          <img
+            className="w-full h-full object-cover"
+            src={hero1}
+            alt="milmax hero image"
+          />
+        </div>
+        <div className="h-[80vh]">
+          <img
+            className="w-full h-full object-cover"
+            src={hero2}
+            alt="milmax hero image"
+          />
+        </div>
+        <div className="h-[80vh]">
+          <img
+            className="w-full h-full object-cover"
+            src={hero3}
+            alt="milmax hero image"
+          />
+        </div>
+        <div className="h-[80vh]">
+          <img
+            className="w-full h-full object-cover"
+            src={hero4}
+            alt="milmax hero image"
+          />
+        </div>
+      </Carousel>
     </section>
   );
 };
