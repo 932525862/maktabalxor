@@ -7,5 +7,6 @@ const NewsPage = lazy(() => import("../pages/news/index.tsx"));
 const HomePage = lazy(() => import("../pages/home/index.tsx"));
 const ProductionPage = lazy(() => import("../pages/production/index.tsx"));
 
-
-export { Layout, AboutPage, ContactPage, NewsPage, HomePage, ProductionPage };
+export {
+    Layout, AboutPage, ContactPage, NewsPage, HomePage, ProductionPage
+};
