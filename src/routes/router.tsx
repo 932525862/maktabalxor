@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { AboutPage, NewsPage, ContactPage, HomePage, Layout, ProductionPage } from "./import-url";
 import { Suspense } from "react";
 import Loading from "../loading";
+// import WetProds from "../pages/production/wet-products";
 
 const Router = [
     {
@@ -28,7 +29,7 @@ const Router = [
             {
                 path: "/production",
                 element: <Suspense fallback={<Loading />}><ProductionPage /></Suspense>
-            }
+            },
         ]
     }
 ]
