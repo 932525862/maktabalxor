@@ -1,11 +1,11 @@
-// import AboutUs from "./components/about";
+import AboutUs from "./components/about";
 import Hero from "./components/hero";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
-      {/* <AboutUs /> */}
+      <AboutUs />
     </>
   );
 };
