@@ -4,8 +4,8 @@ import Fresh from "../../../assets/abouta2.jpg"
 import Dried from "../../../assets/aboutq2.jpg"
 
 const products = [
-  { id: 1, name: 'Fresh fruits', image: Fresh, link: '/fresh-fruits' },
-  { id: 2, name: 'Dried fruits', image: Dried, link: '/dried-fruits' }
+  { id: 1, name: 'Fresh fruits', image: Fresh, link: '/production/wet' },
+  { id: 2, name: 'Dried fruits', image: Dried, link: '/production/dry' }
 ];
 
 const OurProducts = () => {
@@ -15,8 +15,8 @@ const OurProducts = () => {
     <div className="flex flex-col items-center py-10 px-4 md:px-10">
       <h2 className="text-5xl md:text-5xl font-bold mb-30 text-center">Current Agro Products</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {products.map((product, index) => (
-          <div 
+        {products?.map((product, index) => (
+          <div  
             key={product.id} 
             className="relative overflow-hidden rounded-xl shadow-lg cursor-pointer"
             onClick={() => navigate(product.link)}

@@ -62,24 +62,22 @@ const Router = [
             <ProductionPage />
           </Suspense>
         ),
-        children: [
-          {
-            path: "/wet",
-            element: (
-              <Suspense fallback={<Loading />}>
-                <WetFruits />
-              </Suspense>
-            ),
-          },
-          {
-            path: "/dry",
-            element: (
-              <Suspense fallback={<Loading />}>
-                <DryFruits />
-              </Suspense>
-            ),
-          },
-        ],
+      },
+      {
+        path: "/production/wet",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <WetFruits />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/production/dry",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <DryFruits />
+          </Suspense>
+        ),
       },
     ],
   },
