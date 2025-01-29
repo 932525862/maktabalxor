@@ -1,6 +1,6 @@
 import { Carousel } from "antd";
 import { motion } from "framer-motion";
-import hero1 from "../../../../assets/hero/hero1.jpg";
+import hero1 from "../../../../assets/baner1.png";
 import hero2 from "../../../../assets/hero/hero2.jpg";
 import hero3 from "../../../../assets/hero/hero3.jpg";
 import hero4 from "../../../../assets/hero/hero4.jpg";
