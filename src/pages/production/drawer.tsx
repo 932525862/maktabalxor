@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { CloseOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
 import { useState } from "react";
