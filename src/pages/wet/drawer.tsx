@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { CloseOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
 import { useState } from "react";
-import cherry from "../../assets/production/cherry.jpg";
+// import cherry from "../../assets/production/cherry.jpg";
 import "./drawer.css";
 
 interface ProductDrawerProps {
@@ -30,9 +29,6 @@ export default function ProductDrawer({ open, onClose, prodImg, description, tit
                   alt="Carrot pieces"
                   className="rounded-full w-full h-full object-cover shadow-lg"
                 />
-                {/* <button className="absolute top-2 left-2 bg-white p-2 rounded-full shadow" onClick={() => setImgBig(true)}>
-                🔍
-              </button> */}
               </div>
             ) : (
               <div className="cursor-zoom-out relative w-full h-full">
@@ -42,9 +38,6 @@ export default function ProductDrawer({ open, onClose, prodImg, description, tit
                   alt="Carrot pieces"
                   className="w-full rounded-2xl h-full object-cover shadow-lg"
                 />
-                {/* <button className="absolute top-2 left-2 bg-white p-2 rounded-full shadow" onClick={() => setImgBig(true)}>
-                🔍
-              </button> */}
               </div>
             )}
           </div>
