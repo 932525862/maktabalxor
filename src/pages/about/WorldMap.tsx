@@ -1,10 +1,17 @@
 import React, { useState } from "react";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import {
+  ComposableMap,
+  Geographies,
+  Geography,
+  GeographyProps,
+} from "react-simple-maps";
 import { Dialog } from "@headlessui/react"; // Modal uchun
 import { motion } from "framer-motion";
 
+// Geo URL
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
 
+// Maxsus davlatlar ro'yxati
 const specialCountries = [
   "Russia",
   "Kazakhstan",
@@ -30,21 +37,35 @@ const specialCountries = [
   "Italy",
 ];
 
+// O'zbekiston
 const Uzbekistan = "Uzbekistan";
+
+// GeoProperties interfeysi
+interface GeoProperties {
+  name: string;
+}
+
+// GeographyProps interfeysini TypeScript'ga moslashtirish
+interface GeographyItem {
+  properties: GeoProperties;
+}
 
 const WorldMap: React.FC = () => {
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState<boolean>(false);
 
-  const handleHover = (geo: any) => {
+  // Hover holatini o'zgartirish
+  const handleHover = (geo: GeographyItem) => {
     setHoveredCountry(geo.properties.name);
   };
 
+  // Hover holatidan chiqish
   const handleLeave = () => {
     setHoveredCountry(null);
   };
 
-  const handleClick = (geo: any) => {
+  // Bosilganda modalni ochish
+  const handleClick = (geo: GeographyItem) => {
     if (
       geo.properties.name === Uzbekistan ||
       specialCountries.includes(geo.properties.name)
@@ -77,13 +98,14 @@ const WorldMap: React.FC = () => {
       <ComposableMap projectionConfig={{ scale: 150 }} className="mx-auto">
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
-            geographies.map((geo) => {
+            geographies.map((geo: GeographyItem) => {
               const isUzbekistan = geo.properties.name === Uzbekistan;
               const isSpecialCountry = specialCountries.includes(
                 geo.properties.name
               );
               return (
                 <Geography
+                  //@ts-ignore
                   key={geo.rsmKey}
                   geography={geo}
                   onMouseEnter={() => handleHover(geo)}
