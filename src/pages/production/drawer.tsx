@@ -2,7 +2,6 @@
 import { CloseOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
 import { useState } from "react";
-import cherry from "../../assets/production/cherry.jpg"
 
 interface ProductDrawerProps {
   open: boolean;
