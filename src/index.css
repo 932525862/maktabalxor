@@ -4,7 +4,7 @@
 @import "tailwindcss";
 
 * {
-  font-family: "Averta", sans-serif;
+  font-family: "TT Norms", sans-serif;
 }
 
 h1,
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "TT Norms", sans-serif;
+  font-family: "Averta", sans-serif;
 }
 
 .container {
@@ -33,7 +33,10 @@ h6 {
 
 .ant-float-btn-group {
   button {
-    background-color: #05184c;
+    background-color: #d58044;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 60px;
     height: 60px;
     
@@ -48,8 +51,11 @@ h6 {
 
     .ant-float-btn-icon {
       span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: #fff;
-        font-size: 22px;
+        font-size: 32px;
       }
     }
   }
