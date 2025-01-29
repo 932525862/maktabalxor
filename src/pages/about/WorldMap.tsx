@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import {
   ComposableMap,
   Geographies,
-  Geography,
-  GeographyProps,
+  Geography
 } from "react-simple-maps";
 import { Dialog } from "@headlessui/react"; // Modal uchun
 import { motion } from "framer-motion";
