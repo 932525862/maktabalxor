@@ -1,5 +1,6 @@
 import { Drawer } from "antd";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import CustomLink from "../custom-link";
 
 type PropsNavbar = {
   open: boolean;
@@ -16,19 +17,19 @@ const Navbar = ({ open, setOpen }: PropsNavbar) => {
       <div className="hidden md:flex">
         <ul className="flex gap-x-5 text-[#1d1d1d]">
           <li>
-            <Link to="/">Home</Link>
+            <CustomLink to="/">Home</CustomLink>
           </li>
           <li>
-            <Link to="/about">About Us</Link>
+            <CustomLink to="/about">About Us</CustomLink>
           </li>
           <li>
-            <Link to="/news">News</Link>
+            <CustomLink to="/news">News</CustomLink>
           </li>
           <li>
-            <Link to="/production">Products</Link>
+            <CustomLink to="/production">Products</CustomLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <CustomLink to="/contact">Contact</CustomLink>
           </li>
         </ul>
       </div>
