@@ -4,8 +4,11 @@ import logo from "../../assets//logo/png/001.png";
 import { Select } from "antd";
 import { AlignRightOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+
+  const { i18n } = useTranslation()
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -29,7 +32,7 @@ const Header = () => {
   }, []);
 
   const handleChange = (value: string) => {
-    console.log(`selected ${value}`);
+    i18n.changeLanguage(value);
   };
 
   return (
