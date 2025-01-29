@@ -23,6 +23,7 @@ h6 {
 }
 
 @theme {
+  --color-custom-text: #242424;
   --color-custom-red: #800c3a;
   --color-custom-green: #0d684d;
   --color-custom-orange: #d58044;
