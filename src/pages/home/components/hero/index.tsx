@@ -1,13 +1,14 @@
 import { Carousel } from "antd";
-import hero1 from "../../../../assets/hero/hero1.jpg";
-import hero2 from "../../../../assets/hero/hero2.jpg";
-import hero3 from "../../../../assets/hero/hero3.jpg";
-import hero4 from "../../../../assets/hero/hero4.jpg";
+// import hero1 from "../../../../assets/hero/hero1.jpg";
+// import hero2 from "../../../../assets/hero/hero2.jpg";
+// import hero3 from "../../../../assets/hero/hero3.jpg";
+// import hero4 from "../../../../assets/hero/hero4.jpg";
+import homegif from "../../../../assets/home.gif"
 
 const Hero = () => {
   return (
     <section className="mb-20 lg:mb-[100px]">
-      <div className="container relative">
+      {/* <div className="container relative">
         <div className="absolute top-0 z-10 left-5 h-[calc(100vh-70px)] flex flex-col justify-center">
           <h1 className="text-[46px] font-bold text-white max-w-[696px] leading-[64px]">
             EXPORT OF NUTS, DRIED FRUITS, AND LEGUMES FROM UZBEKISTAN
@@ -18,23 +19,23 @@ const Hero = () => {
             product.
           </p>
         </div>
-      </div>
+      </div> */}
       <Carousel autoplay>
         <div className="h-[calc(100vh-70px)]">
           <img
             className="w-full h-full object-cover"
-            src={hero1}
+            src={homegif}
             alt="milmax hero image"
           />
         </div>
-        <div className="h-[calc(100vh-70px)]">
+        {/* <div className="h-[calc(100vh-70px)]">
           <img
             className="w-full h-full object-cover"
             src={hero2}
             alt="milmax hero image"
           />
-        </div>
-        <div className="h-[calc(100vh-70px)]">
+        </div> */}
+        {/* <div className="h-[calc(100vh-70px)]">
           <img
             className="w-full h-full object-cover"
             src={hero3}
@@ -47,7 +48,7 @@ const Hero = () => {
             src={hero4}
             alt="milmax hero image"
           />
-        </div>
+        </div> */}
       </Carousel>
     </section>
   );

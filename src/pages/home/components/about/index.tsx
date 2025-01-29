@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import about1 from "../../../../assets/about1.jpg";
 import about2 from "../../../../assets/about2.jpg";
+import batrbak from "../../../../assets/allimg/partbak.png";
 
 const AboutUs = () => {
   return (
     <section className="relative mb-20 lg:mb-[100px] pt-10">
-      <div className="hidden lg:block w-[43%] max-h-[380px] bg-custom-orange rounded-r-2xl px-10 absolute z-20 top-1/2 -translate-y-1/2">
+      <div 
+        className="hidden lg:block w-[43%] max-h-[380px] rounded-r-2xl px-10 absolute z-20 top-1/2 -translate-y-1/2"
+        style={{ backgroundImage: `url(${batrbak})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
         <div className="grid grid-cols-2 gap-x-5">
           <div className="max-h-[380px] -translate-y-10">
             <img
