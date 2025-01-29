@@ -57,7 +57,7 @@ const WorldMap: React.FC = () => {
         initial={{ opacity: 0, y: 50 }} 
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.6 }}
-        className="text-5xl font-serif font-bold text-center text-gray-800 mb-4"
+        className="text-4xl font-serif font-bold text-center text-gray-800 mb-4"
         style={{ marginTop: '100px' }} // Pastga tushirish uchun
       >
         MILMAX LOGISTIKASI
