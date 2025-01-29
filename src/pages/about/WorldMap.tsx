@@ -44,7 +44,6 @@ interface GeoProperties {
   name: string;
 }
 
-// GeographyProps interfeysini TypeScript'ga moslashtirish
 interface GeographyItem {
   properties: GeoProperties;
 }

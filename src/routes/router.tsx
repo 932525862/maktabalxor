@@ -64,7 +64,7 @@ const Router = [
         ),
         children: [
           {
-            path: "wet",
+            path: "/wet",
             element: (
               <Suspense fallback={<Loading />}>
                 <WetFruits />
@@ -72,7 +72,7 @@ const Router = [
             ),
           },
           {
-            path: "dry",
+            path: "/dry",
             element: (
               <Suspense fallback={<Loading />}>
                 <DryFruits />
