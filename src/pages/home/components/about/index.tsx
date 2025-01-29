@@ -1,26 +1,41 @@
 import { Link } from "react-router-dom";
-import about1 from "../../../../assets/about1.jpg";
-import about2 from "../../../../assets/about2.jpg";
+import about1 from "../../../../assets/aboutq1.jpg";
+import about2 from "../../../../assets/aboutq2.jpg";
+import batrbak from "../../../../assets/allimg/partbak.png";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
     <section className="relative mb-20 lg:mb-[100px] pt-10">
-      <div className="hidden lg:block w-[43%] max-h-[380px] bg-custom-orange rounded-r-2xl px-10 absolute z-20 top-1/2 -translate-y-1/2">
+      <div 
+        className="hidden lg:block w-[43%] max-h-[380px] rounded-r-2xl px-10 absolute z-20 top-1/2 -translate-y-1/2"
+        style={{ backgroundImage: `url(${batrbak})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
         <div className="grid grid-cols-2 gap-x-5">
-          <div className="max-h-[380px] -translate-y-10">
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="max-h-[380px] -translate-y-10"
+          >
             <img
               className="h-full object-cover rounded-2xl"
               src={about1}
               alt="milmax product image"
             />
-          </div>
-          <div className="max-h-[380px] translate-y-10">
+          </motion.div>
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="max-h-[380px] translate-y-10"
+          >
             <img
               className="h-full object-cover rounded-2xl"
               src={about2}
               alt="milmax product image"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -63,7 +78,7 @@ const AboutUs = () => {
               to={"/about"}
               className="flex justify-center md:w-max w-full border border-custom-orange py-5 px-10 rounded-[8px] text-[18px] text-custom-orange font-medium transition hover:bg-custom-orange hover:text-white"
             >
-              Moro detail
+              More detail
             </Link>
           </div>
         </div>
