@@ -17,7 +17,7 @@ const SocialMediaButton = () => {
       <FloatButton.Group
         open={open}
         trigger="click"
-        style={{ insetInlineEnd: 24 }}
+        style={{ insetInlineEnd: 24, bottom: 24 }}
         onClick={() => setOpen(!open)}
         icon={<CustomerServiceOutlined />}
       >
@@ -27,15 +27,6 @@ const SocialMediaButton = () => {
             width: 60,
             height: 60,
             backgroundColor: "#1DA1F2",
-            fontSize: "1.5rem",
-          }}
-        />
-        <FloatButton
-          icon={<SendOutlined />} // Telegram
-          style={{
-            width: 60,
-            height: 60,
-            backgroundColor: "#0088cc",
             fontSize: "1.5rem",
           }}
         />
@@ -54,6 +45,15 @@ const SocialMediaButton = () => {
             width: 60,
             height: 60,
             backgroundColor: "#C13584",
+            fontSize: "1.5rem",
+          }}
+        />
+        <FloatButton
+          icon={<SendOutlined />} // Telegram
+          style={{
+            width: 60,
+            height: 60,
+            backgroundColor: "#0088cc",
             fontSize: "1.5rem",
           }}
         />

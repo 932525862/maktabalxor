@@ -22,7 +22,7 @@ const Statistics: React.FC = () => {
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       
-      <h1 className="text-5xl font-serif font-bold text-center text-gray-800 mb-16">
+      <h1 className="text-4xl font-serif font-bold text-center text-gray-800 mb-16">
       MILMAX RAQAMLARDA
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
