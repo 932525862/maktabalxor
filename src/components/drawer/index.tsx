@@ -1,7 +1,3 @@
 export default function DrawerComp() {
-    return (
-        <div>
-            Drawer Component
-        </div>
-    )
+  return <div>Drawer Component</div>;
 }
