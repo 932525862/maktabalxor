@@ -1,56 +1,94 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { CloseOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
+import { useState } from "react";
+import cherry from "../../assets/production/cherry.jpg"
 
 interface ProductDrawerProps {
   open: boolean;
   onClose: () => void;
   prodImg: string;
-  prodName: string;
   description: string;
   title: string;
 }
-export default function ProductDrawer({ open, onClose, prodImg, prodName, description, title }: ProductDrawerProps) {
+export default function ProductDrawer({ open, onClose, prodImg, description, title }: ProductDrawerProps) {
+  const [imgBig, setImgBig] = useState<boolean>(false);
   return (
-    <Drawer
-      closeIcon={<CloseOutlined style={{ fontSize: "28px", color: "black" }} />}
-      title={<div className="text-center text-4xl h-full my-5">{title}</div>}
-      size="large"
-      width="100%"
-      onClose={onClose}
-      open={open}
-      bodyStyle={{ backgroundColor: "#f8f9fa" }}
-    >
-      <div className="flex items-center justify-between w-full h-full">
-        {/* Image Section */}
-        <div className="flex-1 flex flex-col justify-center items-center">
-          <div className="w-[400px] h-[400px]">
-            <img
-              src={prodImg}
-              alt={title}
-              className="rounded-lg object-cover w-full h-full"
-            />
-          </div>
-          <div className="mt-4 text-xl text-gray-700">Кусочки 1x15 мм</div>
+    <Drawer open={open} onClose={onClose} width={"100%"} closeIcon={<CloseOutlined className="text-xl text-black" color="black" />} bodyStyle={{ scrollbarWidth: "none" }}>
+      <div className="flex bg-white p-2 justify-between">
+        {/* Left Section - Image */}
+        <div className="w-1/2 flex flex-col items-center h-[83vh] justify-center">
+          {!imgBig ? (
+            <div className="relative w-[500px] h-[500px] cursor-zoom-in">
+              <img
+                onClick={() => setImgBig(true)}
+                src={prodImg}
+                alt="Carrot pieces"
+                className="rounded-full w-full h-full object-cover shadow-lg"
+              />
+              {/* <button className="absolute top-2 left-2 bg-white p-2 rounded-full shadow" onClick={() => setImgBig(true)}>
+                🔍
+              </button> */}
+            </div>
+          ) : (
+            <div className="cursor-zoom-out relative w-full h-full">
+              <img
+                onClick={() => setImgBig(false)}
+                src={prodImg}
+                alt="Carrot pieces"
+                className="w-full rounded-2xl h-full object-cover shadow-lg"
+              />
+              {/* <button className="absolute top-2 left-2 bg-white p-2 rounded-full shadow" onClick={() => setImgBig(true)}>
+                🔍
+              </button> */}
+            </div>
+          )}
+
+          <p className="mt-4 text-sm text-gray-500">Кусочки 1x15 мм</p>
         </div>
 
-        {/* Content Section */}
-        <div className="flex-1 p-8">
-          <div className="text-gray-500 text-4xl font-bold mb-4">Сушёные ягоды</div>
-          <div className="text-black text-3xl mb-6">{prodName}</div>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+        {/* Right Section - Text Content */}
+        <div className="w-1/2 p-10 space-y-4">
+          <h2 className="text-xl font-bold text-gray-900">Сушёные овощи</h2>
+          <h1 className="text-4xl font-extrabold text-orange-600">{title}</h1>
+
+          <p className="text-gray-700">
             {description}
           </p>
-          {/* Form and Packaging Info */}
-          <div className="flex justify-between mt-5">
+
+          <p className="text-gray-700">
+            Порой не нужны сложные рецепты и специи, достаточно лишь обжарить
+            морковь с луком — и ваш ужин сразу станет вкуснее.
+          </p>
+
+          <p className="text-gray-700">
+            Этот яркий овощ — настоящий кладезь витаминов A, B, PP, C, E, калия,
+            фосфора, фолиевой кислоты.
+          </p>
+
+          <div className="flex items-center justify-between pt-6">
             <div>
-              <div className="font-medium text-lg">Форма</div>
-              <div>Порошок, Слайсы, Кусочки</div>
+              <h3 className="font-semibold">Форма</h3>
+              <ul className="text-gray-700">
+                <li>Порошок</li>
+                <li>Кусочки</li>
+                <li>Возможна индивидуальная нарезка</li>
+              </ul>
             </div>
             <div>
-              <div className="font-medium text-lg">Фасовка</div>
-              <div>Мешки, Пластиковые контейнеры</div>
+              <h3 className="font-semibold">Фасовка</h3>
+              <ul className="text-gray-700">
+                <li>Мешки</li>
+                <li>Картонные коробки</li>
+              </ul>
             </div>
           </div>
+          <div className="flex items-center justify-center text-white h-16">
+            <button className="bg-green-600 text-white font-bold px-6 py-3 rounded-lg transition-transform ease-in-out hover:scale-105 duration-500 hover:bg-white hover:text-green-600 hover:border-2 w-full hover:border-green-600">
+              Оставить заявку
+            </button>
+          </div>
+
         </div>
       </div>
     </Drawer>
