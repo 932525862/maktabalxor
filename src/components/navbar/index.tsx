@@ -1,6 +1,7 @@
 import { Drawer } from "antd";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CustomLink from "../custom-link";
+import { useTranslation } from "react-i18next";
 
 type PropsNavbar = {
   open: boolean;
@@ -12,24 +13,26 @@ const Navbar = ({ open, setOpen }: PropsNavbar) => {
     setOpen(false);
   };
 
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="hidden md:flex">
         <ul className="flex gap-x-5 text-[#1d1d1d]">
           <li>
-            <CustomLink to="/">Home</CustomLink>
+            <CustomLink to="/">{t("navbar.home")}</CustomLink>
           </li>
           <li>
-            <CustomLink to="/about">About Us</CustomLink>
+            <CustomLink to="/about">{t("navbar.about")}</CustomLink>
           </li>
           <li>
-            <CustomLink to="/news">News</CustomLink>
+            <CustomLink to="/news">{t("navbar.news")}</CustomLink>
           </li>
           <li>
-            <CustomLink to="/production">Products</CustomLink>
+            <CustomLink to="/production">{t("navbar.product")}</CustomLink>
           </li>
           <li>
-            <CustomLink to="/contact">Contact</CustomLink>
+            <CustomLink to="/contact">{t("navbar.contact")}</CustomLink>
           </li>
         </ul>
       </div>
@@ -37,19 +40,19 @@ const Navbar = ({ open, setOpen }: PropsNavbar) => {
       <Drawer title="Basic Drawer" onClose={onClose} open={open}>
         <ul className="flex flex-col gap-x-5 text-[#1d1d1d]">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">{t("navbar.home")}</Link>
           </li>
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/about">{t("navbar.about")}</Link>
           </li>
           <li>
-            <Link to="/news">News</Link>
+            <Link to="/news">{t("navbar.news")}</Link>
           </li>
           <li>
-            <Link to="/production">Products</Link>
+            <Link to="/production">{t("navbar.product")}</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">{t("navbar.contact")}</Link>
           </li>
         </ul>
       </Drawer>
