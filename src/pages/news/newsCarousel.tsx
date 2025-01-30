@@ -1,11 +1,17 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import img1 from "../../assets/abouta2.jpg"
 import { useNavigate } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+import img1 from "../../assets/abouta2.jpg";
+
+//Problem with installation
+import 'swiper/swiper-bundle.css';
+// @ts-expect-error  prevents error
+import 'swiper/css/pagination';
+
+
+import { Autoplay } from "swiper/modules";
 
 const NewsCarousel: React.FC = () => {
-
     const navigate = useNavigate();
 
     return (
@@ -23,10 +29,24 @@ const NewsCarousel: React.FC = () => {
                     key={index}
                     className="h-full !w-[370px] flex justify-center items-center"
                 >
-                    <div className="flex flex-col justify-center h-full w-full font-bold relative group cursor-pointer" onClick={() => { navigate("/contact"); scrollTo({ top: 0, behavior: "smooth" }) }}>
-                        <img src={img1} alt="Carousel Image" className="w-full h-full object-cover rounded-2xl hover:rounded-4xl transition-all duration-500" />
-                        <span className="font-bold text-xl text-white absolute bottom-5 opacity-100 group-hover:opacity-0 group-hover:invisible visible transition-all duration-300 px-5">{"Ho'l Meva Yangiliklari"}</span>
-                        <span className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 flex items-center justify-center">More -&gt;</span>
+                    <div
+                        className="flex flex-col items-center justify-center h-full w-full font-bold relative group cursor-pointer"
+                        onClick={() => {
+                            navigate("/contact");
+                            scrollTo({ top: 0, behavior: "smooth" });
+                        }}
+                    >
+                        <img
+                            src={img1}
+                            alt="Carousel Image"
+                            className="w-full h-full object-cover rounded-2xl hover:rounded-4xl transition-all duration-500"
+                        />
+                        <span className="font-bold text-xl text-white absolute bottom-5 opacity-100 group-hover:opacity-0 group-hover:invisible visible transition-all duration-300">
+                            {"Ho'l Meva Yangiliklari"}
+                        </span>
+                        <span className="absolute top-[50%] text-white text-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 flex items-center justify-center">
+                            More -&gt;
+                        </span>
                     </div>
                 </SwiperSlide>
             ))}
