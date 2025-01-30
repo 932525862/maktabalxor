@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { CloseOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
 import { useState } from "react";
-import cherry from "../../assets/production/cherry.jpg";
 import "./drawer.css";
+import { useNavigate } from "react-router-dom";
 
 interface ProductDrawerProps {
   open: boolean;
@@ -16,6 +15,9 @@ interface ProductDrawerProps {
 
 export default function ProductDrawer({ open, onClose, prodImg, description, title }: ProductDrawerProps) {
   const [imgBig, setImgBig] = useState<boolean>(false);
+
+  const navigate = useNavigate();
+
   return (
     <div className="custom-drawer">
       <Drawer open={open} onClose={onClose} width={"100%"} closeIcon={<CloseOutlined className="text-xl text-black" color="black" />} bodyStyle={{ scrollbarWidth: "none" }} className="custom-drawer" >
@@ -30,9 +32,6 @@ export default function ProductDrawer({ open, onClose, prodImg, description, tit
                   alt="Carrot pieces"
                   className="rounded-full w-full h-full object-cover shadow-lg"
                 />
-                {/* <button className="absolute top-2 left-2 bg-white p-2 rounded-full shadow" onClick={() => setImgBig(true)}>
-                🔍
-              </button> */}
               </div>
             ) : (
               <div className="cursor-zoom-out relative w-full h-full">
@@ -42,9 +41,6 @@ export default function ProductDrawer({ open, onClose, prodImg, description, tit
                   alt="Carrot pieces"
                   className="w-full rounded-2xl h-full object-cover shadow-lg"
                 />
-                {/* <button className="absolute top-2 left-2 bg-white p-2 rounded-full shadow" onClick={() => setImgBig(true)}>
-                🔍
-              </button> */}
               </div>
             )}
           </div>
@@ -52,7 +48,7 @@ export default function ProductDrawer({ open, onClose, prodImg, description, tit
           {/* Right Section - Text Content */}
           <div className="w-1/2 p-10 space-y-4">
             <h2 className="text-xl font-bold text-gray-900">Сушёные овощи</h2>
-            <h1 className="text-4xl font-extrabold text-orange-600">{title}</h1>
+            <h1 className="text-4xl font-extrabold text-[#7f103a]">{title}</h1>
 
             <p className="text-gray-700">
               {description}
@@ -85,8 +81,11 @@ export default function ProductDrawer({ open, onClose, prodImg, description, tit
                 </ul>
               </div>
             </div>
-            <div className="flex items-center justify-center text-white h-16">
-              <button className="bg-green-600 text-white font-bold px-6 py-3 rounded-lg transition-transform ease-in-out hover:scale-105 duration-500 hover:bg-white hover:text-green-600 hover:border-2 w-full hover:border-green-600">
+            <div className="flex items-center justify-center h-16" onClick={() => {
+              navigate("/contact");
+              scrollTo({ "top": 0, behavior: "smooth" })
+            }}>
+              <button className="bg-green-600 text-white font-bold px-6 py-3 rounded-lg transition-transform ease-in-out hover:scale-105 duration-700 hover:bg-white hover:text-green-600 cursor-pointer hover:border-2 w-full hover:border-green-600">
                 Оставить заявку
               </button>
             </div>
