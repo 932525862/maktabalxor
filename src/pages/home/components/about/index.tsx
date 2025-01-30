@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import about1 from "../../../../assets/aboutq1.jpg";
-import about2 from "../../../../assets/aboutq2.jpg";
-import batrbak from "../../../../assets/allimg/partbak.png";
+import about1 from "../../../../assets/allimg/IMG_4817.jpg";
+import about2 from "../../../../assets/allimg/OA PHOTO_191 копия.jpg";
+import batrbak from "../../../../assets/allimg/OA PHOTO_142 копия.jpg";
 import { motion } from "framer-motion";
 
 const AboutUs = () => {
@@ -54,7 +54,7 @@ const AboutUs = () => {
 
             <div className="md:flex gap-x-10 mb-10">
               <div className="md:w-1/2">
-                <span className="text-[48px] leading-[48px] text-custom-orange">
+                <span className="text-[48px] leading-[48px] text-[#7f103a]">
                   5+
                 </span>
                 <br />
@@ -64,7 +64,7 @@ const AboutUs = () => {
                 </p>
               </div>
               <div className="md:w-1/2">
-                <span className="text-[48px] leading-[48px] text-custom-orange">
+                <span className="text-[48px] leading-[48px] text-[#7f103a]">
                   80+
                 </span>
                 <br />
@@ -75,11 +75,11 @@ const AboutUs = () => {
             </div>
 
             <Link
-              to={"/about"}
-              className="flex justify-center md:w-max w-full border border-custom-orange py-5 px-10 rounded-[8px] text-[18px] text-custom-orange font-medium transition hover:bg-custom-orange hover:text-white"
-            >
-              More detail
-            </Link>
+  to={"/about"}
+  className="flex justify-center md:w-max w-full border border-[#7f103a] py-5 px-15 rounded-[8px] text-[18px] text-[#7f103a] font-medium transition hover:bg-[#7f103a] hover:text-white"
+>
+  More detail
+</Link>
           </div>
         </div>
       </div>
