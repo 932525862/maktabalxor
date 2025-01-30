@@ -8,8 +8,9 @@ const AboutPage = () => {
     <CompanyAbout/>
     < AgroGenesis/>
     <Statistics/>
-    <WorldMap/>
     <OurProducts/>
+    <WorldMap/>
+    
    
   </div>;
 };

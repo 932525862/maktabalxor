@@ -3,13 +3,15 @@ import Hero from "./components/hero";
 import AgroProcess from "./components/AgroProcess"
 import OurProducts from "./components/OurProducts"
 import WorldMap from "../about/WorldMap"
+import AgroQuality from "./components/quality"
 const HomePage = () => {
   return (
     <>
       <Hero />
       <AboutUs />
       <AgroProcess/>
-      <OurProducts/>
+      <AgroQuality/>
+      <OurProducts/>  
       <WorldMap/>
     </>
   );
