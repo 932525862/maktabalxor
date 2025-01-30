@@ -32,7 +32,7 @@ const NewsCarousel: React.FC = () => {
                     <div
                         className="flex flex-col items-center justify-center h-full w-full font-bold relative group cursor-pointer"
                         onClick={() => {
-                            navigate("/contact");
+                            navigate("/news/2");
                             scrollTo({ top: 0, behavior: "smooth" });
                         }}
                     >
