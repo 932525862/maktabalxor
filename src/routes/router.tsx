@@ -8,6 +8,7 @@ import {
   ProductionPage,
   WetFruits,
   DryFruits,
+  NewsSinglePage,
 } from "./import-url";
 import { Suspense } from "react";
 import Loading from "../loading";
@@ -52,6 +53,14 @@ const Router = [
         element: (
           <Suspense fallback={<Loading />}>
             <NewsPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/news/:id",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <NewsSinglePage />
           </Suspense>
         ),
       },
