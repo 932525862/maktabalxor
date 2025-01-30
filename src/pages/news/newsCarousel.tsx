@@ -4,8 +4,8 @@ import img1 from "../../assets/abouta2.jpg"
 
 
 //Problem with installation
-import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/pagination";
 import { useNavigate } from "react-router-dom";
 
 
