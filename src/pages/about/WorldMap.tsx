@@ -80,7 +80,7 @@ const WorldMap: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="text-4xl font-serif font-bold text-center text-gray-800 mb-4"
-        style={{ marginTop: "100px" }} // Pastga tushirish uchun
+        style={{ marginTop: "100px" }}
       >
         MILMAX LOGISTIKASI
       </motion.h1>
@@ -90,8 +90,10 @@ const WorldMap: React.FC = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="text-base md:text-xl font-bold text-gray-700 text-center mb-4"
       >
-        Milmax kompaniyasi ushbu xaritada ko‘rsatilgan davlatlarga o‘z
-        mahsulotlarini yetkazib bera oladi.
+        <p className="text-lg font-sans text-gray-700 leading-relaxed">
+          Milmax kompaniyasi ushbu xaritada ko‘rsatilgan davlatlarga o‘z
+          mahsulotlarini yetkazib bera oladi.
+        </p>
       </motion.h2>
       <ComposableMap projectionConfig={{ scale: 150 }} className="mx-auto">
         <Geographies geography={geoUrl}>
@@ -112,11 +114,12 @@ const WorldMap: React.FC = () => {
                   style={{
                     default: {
                       fill: isUzbekistan
-                        ? "yellow" // O‘zbekiston sariq rangda
+                        ? "#d58044" // O‘zbekiston
                         : isSpecialCountry
-                        ? "green" // Ro‘yxatdagi davlatlar yashil rangda
-                        : "#D6D6DA", // Boshqa davlatlar kul rangda
+                        ? "#7f103a" // Ro‘yxatdagi davlatlar
+                        : "#D6D6DA",
                       outline: "none",
+                      cursor: isSpecialCountry ? "pointer" : "default",
                     },
                     hover: { fill: "#F53", outline: "none" },
                     pressed: { fill: "#E42", outline: "none" },
@@ -145,18 +148,16 @@ const WorldMap: React.FC = () => {
         className="fixed inset-0 flex items-center justify-center z-50 bg-transparent"
       >
         <div className="bg-white rounded-lg shadow-lg p-6 max-w-2xl w-full relative">
-          <h2 className="text-xl font-bold mb-4 text-center">
+          <p className="text-xl font-bold mb-4 text-center text-lg font-sans text-gray-700 leading-relaxed">
             Ushbu ro‘yxatdagi davlatlarga havo, dengiz va avtomobil yo‘llari
             orqali mahsulotlarni yetkazib beramiz.
-          </h2>
+          </p>
           <div className="max-h-64 overflow-y-auto border border-gray-300 rounded-md">
             <table className="table-auto w-full border-collapse border border-gray-300">
               <thead>
                 <tr className="bg-gray-100">
                   <th className="border border-gray-300 px-4 py-2">No.</th>
-                  <th className="border border-gray-300 px-4 py-2">
-                    Country Name
-                  </th>
+                  <th className="border border-gray-300 px-4 py-2">Country Name</th>
                 </tr>
               </thead>
               <tbody>
@@ -168,9 +169,7 @@ const WorldMap: React.FC = () => {
                     <td className="border border-gray-300 px-4 py-2 text-center">
                       {index + 1}
                     </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      {country}
-                    </td>
+                    <td className="border border-gray-300 px-4 py-2">{country}</td>
                   </tr>
                 ))}
               </tbody>
@@ -178,17 +177,9 @@ const WorldMap: React.FC = () => {
           </div>
           <button
             onClick={() => setModalOpen(false)}
-            className="mt-4 bg-[#d58044] text-white px-4 py-2 rounded-md hover:bg-[#b46738] transition mx-auto block"
+            className="mt-4 bg-[#7f103a] text-white px-8 py-2 rounded-md hover:bg-[#b46738] transition mx-auto block"
           >
             Close
-          </button>
-
-          {/* Modalni yopish tugmasi uchun yopilish belgisini joylashtirish */}
-          <button
-            onClick={() => setModalOpen(false)}
-            className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 transition"
-          >
-            ✖
           </button>
         </div>
       </Dialog>
