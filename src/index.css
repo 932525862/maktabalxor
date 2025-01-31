@@ -59,3 +59,12 @@ h6 {
     }
   }
 }
+.ant-btn:hover {
+  background-color: #800c3a!important;
+  opacity: 0.9!important;
+  color: white!important;
+}
+
+body {
+  overflow-x: hidden!important;
+}
