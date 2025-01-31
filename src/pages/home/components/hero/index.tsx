@@ -1,9 +1,10 @@
 import { Carousel } from "antd";
 import { motion } from "framer-motion";
-import hero1 from "../../../../assets/baner1.png";
-import hero2 from "../../../../assets/hero/hero2.jpg";
-import hero3 from "../../../../assets/hero/hero3.jpg";
-import hero4 from "../../../../assets/hero/hero4.jpg";
+import { Link } from "react-router-dom";
+import hero1 from "../../../../assets/allimg/2.png";
+import hero2 from "../../../../assets/allimg/OA PHOTO_11 копия.jpg";
+import hero3 from "../../../../assets/allimg/OA PHOTO_65 копия.jpg";
+import hero4 from "../../../../assets/allimg/OA PHOTO_70 копия.jpg";
 
 const Hero = () => {
   return (
@@ -33,9 +34,13 @@ const Hero = () => {
           <p className="mt-4 text-[18px] md:text-[20px] font-light leading-[1.6] drop-shadow-md">
             We supply dried fruits, legumes, and nuts from Uzbekistan. We offer customized delivery terms and full coverage for any defects in the product.
           </p>
-          <button className="mt-6 px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white rounded-lg shadow-lg transition duration-300">
-            Learn More
-          </button>
+
+          <Link
+  to={"/about"}
+  className="flex justify-center md:w-max w-full border border-white py-5 px-15 rounded-[8px] text-[18px] text-white font-medium transition hover:bg-[#7f103a] hover:text-white mt-5"
+>
+  More detail
+</Link>
         </motion.div>
       </div>
     </section>

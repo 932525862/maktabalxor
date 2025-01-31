@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 const AgroProcess = () => {
@@ -24,7 +23,7 @@ const AgroProcess = () => {
           viewport={{ once: true }} 
           className="flex flex-col items-start bg-white shadow-md p-6 rounded-lg"
         >
-          <span className="text-[#D58044] text-3xl font-bold mb-4">01</span>
+          <span className="text-[#7f103a] text-3xl font-bold mb-4">01</span>
           <p className="text-gray-800">
             We select agricultural products based on customer demand from our partner farmers.
           </p>
@@ -36,7 +35,7 @@ const AgroProcess = () => {
           viewport={{ once: true }} 
           className="flex flex-col items-start bg-white shadow-md p-6 rounded-lg"
         >
-          <span className="text-[#D58044] text-3xl font-bold mb-4">02</span>
+          <span className="text-[#7f103a] text-3xl font-bold mb-4">02</span>
           <p className="text-gray-800">
             We inspect the selected products for quality and damage.
           </p>
@@ -48,7 +47,7 @@ const AgroProcess = () => {
           viewport={{ once: true }} 
           className="flex flex-col items-start bg-white shadow-md p-6 rounded-lg"
         >
-          <span className="text-[#D58044] text-3xl font-bold mb-4">03</span>
+          <span className="text-[#7f103a] text-3xl font-bold mb-4">03</span>
           <p className="text-gray-800">
             After inspection, we package the products in eco-friendly, durable, and spacious containers.
           </p>
@@ -60,7 +59,7 @@ const AgroProcess = () => {
           viewport={{ once: true }} 
           className="flex flex-col items-start bg-white shadow-md p-6 rounded-lg"
         >
-          <span className="text-[#D58044] text-3xl font-bold mb-4">04</span>
+          <span className="text-[#7f103a] text-3xl font-bold mb-4">04</span>
           <p className="text-gray-800">
             We store the products for 24-48 hours in special conditions based on the product type.
           </p>
@@ -72,9 +71,21 @@ const AgroProcess = () => {
           viewport={{ once: true }} 
           className="flex flex-col items-start bg-white shadow-md p-6 rounded-lg"
         >
-          <span className="text-[#D58044] text-3xl font-bold mb-4">05</span>
+          <span className="text-[#7f103a] text-3xl font-bold mb-4">05</span>
           <p className="text-gray-800">
             We load the products onto trucks and deliver them to customers.
+          </p>
+        </motion.div>
+        <motion.div 
+          variants={itemVariants} 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true }} 
+          className="flex flex-col items-start bg-white shadow-md p-6 rounded-lg"
+        >
+          <span className="text-[#7f103a] text-3xl font-bold mb-4">06</span>
+          <p className="text-gray-800">
+            We provide ongoing support to ensure customer satisfaction and resolve any issues.
           </p>
         </motion.div>
       </div>

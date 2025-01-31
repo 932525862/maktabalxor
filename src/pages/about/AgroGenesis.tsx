@@ -5,7 +5,7 @@ import Img2 from "../../assets/allimg/hist2.png";
 const AgroGenesis: React.FC = () => {
   return (
     <div className="bg-white p-6 sm:p-8 md:p-12 lg:p-16 max-w-6xl mx-auto">
-      <h1 className="text-4xl sm:text-4xl md:text-3xl lg:text-4xl font-serif font-bold text-center text-gray-800 mb-16">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-center text-gray-800 mb-16">
         O'zbekiston Qishloq Xo'jaligining Tarixi
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -17,7 +17,7 @@ const AgroGenesis: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl sm:text-3xl md:text-2xl lg:text-4xl font-serif font-bold text-red-600 mb-6">AGRO-GENESIS</h2>
+          <h2 className="text-3xl sm:text-3xl md:text-2xl lg:text-3xl font-serif font-bold text-[#7f103a] mb-6">AGRO-GENESIS</h2>
           <p className="text-lg font-sans text-gray-700 leading-relaxed">
             O'zbekistonda qishloq xo'jaligi miloddan avvalgi 3000-yillarga borib taqaladi, bu davrda dastlabki ekin ekish va sug'orish amaliyotlari rivojlangan. Ayniqsa, qanat tizimlari va murakkab suvni boshqarish tizimlari orqali o'simliklarni sug'orish, mintaqadagi qishloq xo'jaligining asosiy usullaridan bo'lib, iqtisodiy taraqqiyotga katta hissa qo'shgan. Bu amaliyotlar nafaqat o'zbek yerlarida, balki butun Markaziy Osiyoda qishloq xo'jaligining rivojlanishiga turtki bo'lib, ajralib turadigan madaniyat va texnologik yutuqlarni shakllantirgan.
           </p>
@@ -57,7 +57,7 @@ const AgroGenesis: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl sm:text-3xl md:text-2xl lg:text-4xl font-serif font-bold text-red-600 mb-6">MIDDLE AGES</h2>
+          <h2 className="text-4xl sm:text-3xl md:text-2xl lg:text-3xl font-serif font-bold text-[#7f103a] mb-6">MIDDLE AGES</h2>
           <p className="text-lg font-sans text-gray-700 leading-relaxed">
             Islomiy qishloq xo'jaligi yangiliklari joriy etilgan, shu jumladan ilg'or sug'orish texnikalari, ekinlarni yetishtirishda samaradorlikni oshiradigan yangi metodlar va o'zgartirilgan sug'orish tizimlari. Bu davr, shuningdek, Samaniylar va Temuriylar kabi turli imperiyalar ostida qishloq xo'jaligi fanining va amaliyotining rivojlanishini ko'rgan, ilm-fan sohasidagi yangiliklar va qishloq xo'jaligi texnologiyalarining o'zaro aloqasi orqali yangi agrar tizimlarning shakllanishiga sabab bo'lgan.
           </p>
