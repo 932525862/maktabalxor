@@ -24,7 +24,7 @@ export default function ProductDrawer({ open, onClose, prodImg, description, tit
       bodyStyle={{ scrollbarWidth: "none" }}
       className="custom-drawer"
     >
-      <div className="flex flex-col lg:flex-row bg-white p-4 justify-between gap-6">
+      <div className="flex flex-col lg:flex-row bg-white p-4 justify-between h-full gap-6 items-center">
 
         {/* Left Section - Image */}
         <div className="w-full lg:w-1/2 flex justify-center">
@@ -39,7 +39,7 @@ export default function ProductDrawer({ open, onClose, prodImg, description, tit
         </div>
 
         {/* Right Section - Text Content */}
-        <div className="w-full lg:w-1/2 space-y-4">
+        <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
           <h2 className="text-lg lg:text-xl font-bold text-gray-900">Сушёные овощи</h2>
           <h1 className="text-2xl lg:text-4xl font-extrabold text-[#7f103a]">{title}</h1>
           <p className="text-sm lg:text-base text-gray-700">{description}</p>
@@ -70,7 +70,7 @@ export default function ProductDrawer({ open, onClose, prodImg, description, tit
 
           <div className="flex justify-center pt-6">
             <button
-              className="bg-green-600 text-white font-bold px-6 py-3 rounded-lg w-full lg:w-auto hover:bg-white hover:text-green-600 hover:border-2 hover:border-green-600 transition-transform hover:scale-105"
+              className="bg-[#7f103a] text-white font-bold px-6 py-3 rounded-lg w-full lg:w-auto hover:bg-white hover:text-[#652c42] hover:border-2 hover:border-[#7f103a] transition-transform hover:scale-105"
               onClick={() => {
                 navigate("/contact");
                 scrollTo({ top: 0, behavior: "smooth" });
