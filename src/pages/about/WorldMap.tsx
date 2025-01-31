@@ -79,7 +79,7 @@ const WorldMap: React.FC = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-serif font-bold text-center text-gray-800 mb-4"
+        className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-center text-gray-800 mb-4"
         style={{ marginTop: "100px" }}
       >
         MILMAX LOGISTIKASI
@@ -156,7 +156,7 @@ const WorldMap: React.FC = () => {
             <table className="table-auto w-full border-collapse border border-gray-300">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="border border-gray-300 px-4 py-2">No.</th>
+                  <th className="border border-gray-300 px-4 py-2">No.f</th>
                   <th className="border border-gray-300 px-4 py-2">Country Name</th>
                 </tr>
               </thead>
