@@ -42,7 +42,7 @@ const AboutUs = () => {
       <div className="container">
         <div className="flex justify-end gap-x-20">
           <div className="w-full lg:w-1/2">
-            <h2 className="text-[36px] font-bold uppercase leading-[48px] text-custom-text mb-5">
+            <h2 className="text-[30px] text-center md:text-left md:text-[36px] font-bold uppercase leading-[48px] text-custom-text mb-5">
               ABOUT MILMAX AGRO
             </h2>
             <p className="text-[18px] font-normal leading-[32px] text-custom-text mb-5">
