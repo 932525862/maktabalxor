@@ -30,7 +30,7 @@ const ContactForm: React.FC = () => {
       layout="vertical"
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
-      className="w-1/2 space-y-4"
+      className="lg:w-1/2 space-y-4 w-full"
     >
       {/* Name */}
       <Form.Item
