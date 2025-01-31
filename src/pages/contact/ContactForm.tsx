@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, Form, Input } from "antd";
 import { useState } from "react";
 
@@ -40,7 +41,7 @@ const ContactForm: React.FC = () => {
         help={errors.name}
         rules={[{ required: true, message: "Name is required" }]}
       >
-        <Input placeholder="Name" />
+        <Input placeholder="Name" size="large" />
       </Form.Item>
 
       {/* Email */}
@@ -54,12 +55,12 @@ const ContactForm: React.FC = () => {
           { type: "email", message: "Invalid email format" },
         ]}
       >
-        <Input placeholder="Email" />
+        <Input placeholder="Email" size="large" />
       </Form.Item>
 
       {/* Company */}
       <Form.Item name="company" label="Company">
-        <Input placeholder="Company" />
+        <Input placeholder="Company" size="large" />
       </Form.Item>
 
       {/* Message */}
@@ -70,10 +71,10 @@ const ContactForm: React.FC = () => {
         help={errors.message}
         rules={[{ required: true, message: "Message is required" }]}
       >
-        <Input.TextArea placeholder="Message" rows={4} />
+        <Input.TextArea placeholder="Message" rows={4} size="large" />
       </Form.Item>
 
-      <Button type="primary" htmlType="submit" className="w-full">
+      <Button htmlType="submit" className="w-full !text-white !bg-[#7f103a]">
         Send
       </Button>
     </Form>

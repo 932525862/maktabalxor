@@ -14,17 +14,17 @@ const Footer = () => {
   return (
     <footer className="py-20 bg-[#f3f3f3]">
       <div className="container">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-10">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-10 place-content-center">
+          <div className="flex flex-col items-center">
             <div className="max-w-[200px] mb-10">
               <img src={logo} alt="milmax logo" />
             </div>
-            <div className="flex sm:flex-col justify-between gap-y-5 gap-x-10 flex-wrap">
+            <div className="flex flex-col justify-center md:justify-between gap-5 md:flex-wrap">
               <div className="w-max">
-                <h5 className="w-max font-medium text-[18px] mb-[10px]">
+                <h5 className="w-max font-medium text-[18px] mb-[10px] text-center">
                   We are on social media:
                 </h5>
-                <div className="flex items-center gap-x-4 text-[24px]">
+                <div className="flex items-center justify-center gap-x-4 text-[24px]">
                   <Link to="/" className="transition hover:scale-110">
                     <RiFacebookCircleLine />
                   </Link>
@@ -37,7 +37,7 @@ const Footer = () => {
                 <h5 className="w-max font-medium text-[18px] mb-[10px]">
                   We are in messengers:
                 </h5>
-                <div className="flex items-center gap-x-4 text-[24px]">
+                <div className="flex justify-center items-center gap-x-4 text-[24px]">
                   <Link to="/" className="transition hover:scale-110">
                     <FaWhatsapp />
                   </Link>
@@ -53,10 +53,10 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-[18px] font-medium text-black mb-[10px]">
+            <h4 className="text-[18px] text-center font-medium text-black mb-[10px]">
               Menu
             </h4>
-            <ul className="text-[16px] font-normal flex flex-row lg:flex-col gap-y-[10px] gap-x-10 flex-wrap">
+            <ul className="text-[16px] font-normal flex justify-center items-center flex-col text-center gap-5 flex-wrap">
               <li>
                 <CustomLink to="/">Home</CustomLink>
               </li>
@@ -76,10 +76,10 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-[18px] font-medium text-black mb-[10px]">
+            <h4 className="text-[18px] text-center font-medium text-black mb-[10px]">
               Products
             </h4>
-            <ul className="text-[16px] font-normal flex flex-col gap-y-[10px]">
+            <ul className="text-[16px] font-normal flex justify-between items-center flex-col gap-y-[10px]">
               <li>
                 <CustomLink to="/production">Dry product</CustomLink>
               </li>
@@ -90,10 +90,10 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-[18px] font-medium text-black mb-[10px]">
+            <h4 className="text-[18px] text-center font-medium text-black mb-[10px]">
               Contacts
             </h4>
-            <ul className="text-[16px] font-normal flex flex-col gap-y-[10px]">
+            <ul className="text-[16px] font-normal flex justify-center items-center flex-col gap-y-[10px]">
               <li>
                 <address className="not-italic flex items-start gap-x-2">
                   <span className="flex items-end text-xl">

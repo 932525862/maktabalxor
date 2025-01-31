@@ -49,7 +49,7 @@ const WetFruits = () => {
   return (
     <>
       <div className="container max-w-7xl h-full w-full mx-auto flex flex-col justify-between">
-        <div className="uppercase flex justify-center items-center h-[130px] text-4xl rounded-3xl mt-5 text-white font-bold bg-[url('/assets/bg.jpg')]" style={{ backgroundImage: `url(${bg})` }}>Fresh Products</div>
+        <div className="uppercase flex text-center justify-center items-center h-[130px] text-2xl md:text-4xl rounded-3xl mt-5 text-white font-bold bg-[url('/assets/bg.jpg')]" style={{ backgroundImage: `url(${bg})` }}>Fresh Products</div>
         <div className="flex flex-wrap justify-center items-center gap-5 my-5">
           {data && Array.from(data)?.map((item, idx) => (
             <div className="flex group cursor-pointer items-center justify-center w-[250px] h-[250px] p-3 hover:scale-105 transition-all duration-500 ease-in-out hover:grayscale-50 relative" onClick={() => setOpen(true)} key={idx}>
