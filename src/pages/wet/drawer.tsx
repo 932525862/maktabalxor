@@ -24,7 +24,7 @@ export default function ProductDrawer({ open, onClose, prodImg, description, tit
       bodyStyle={{ scrollbarWidth: "none" }}
       className="custom-drawer"
     >
-      <div className="flex flex-col lg:flex-row bg-white p-4 justify-between h-full gap-6 items-center">
+      <div className="flex flex-col lg:flex-row bg-white justify-center h-full max-h-full my-[150px] md:my-20 lg:my-0 gap-6 items-center">
 
         {/* Left Section - Image */}
         <div className="w-full lg:w-1/2 flex justify-center">
@@ -33,7 +33,7 @@ export default function ProductDrawer({ open, onClose, prodImg, description, tit
               onClick={() => setImgBig(!imgBig)}
               src={prodImg}
               alt="Product"
-              className={`cursor-${imgBig ? "zoom-out" : "zoom-in"} w-full h-full object-cover rounded-2xl shadow-lg`}
+              className={`${imgBig ? "cursor-zoom-out" : "cursor-zoom-in"} ${imgBig ? "rounded-2xl" : "rounded-full"} w-full h-full object-cover shadow-lg`}
             />
           </div>
         </div>
