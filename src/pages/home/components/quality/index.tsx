@@ -5,7 +5,7 @@ import Img3 from "../../../../assets/allimg/IMG_4811.jpg";
 import Img4 from "../../../../assets/allimg/IMG_4781.jpg";
 const AgroQuality: React.FC = () => {
   return (
-    <div className="bg-white p-6 sm:p-8 md:p-12 lg:p-16 max-w-6xl mx-auto">
+    <div className="bg-white p-6 sm:p-8 md:p-12 lg:p-16 max-w-6xl mx-auto" id="products">
       <h1 className="text-4xl sm:text-4xl md:text-3xl lg:text-4xl font-serif font-bold text-center text-gray-800 mb-16">
       Nima uchun Milmax mahsulotlari sifatli? <br/> Keling, birgalikda buning sabablarini ko'rib chiqamiz.
       </h1>

@@ -7,10 +7,10 @@ export default function NewsOnePage() {
     const { id } = useParams<{ id: string }>();
     return (
         <div className="max-w-7xl mx-auto container h-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center mt-10 max-h-full h-full md:h-[80vh]">
+            <h1 className="text-4xl font-bold my-8 md:mt-10 md:mb-0 text-center">Financial Report {id}</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center mt-0 max-h-full h-full md:h-[80vh]">
                 {/* <!-- Text Content --> */}
-                <div className="p-5 text-center">
-                    <h1 className="text-4xl font-bold mb-8">Financial Report {id}</h1>
+                <div className="p-5 text-center order-2 md:order-1">
                     <div className="space-y-6">
                         <div>
                             <h2 className="text-2xl font-semibold">Revenue Growth</h2>
@@ -40,7 +40,7 @@ export default function NewsOnePage() {
                 </div>
 
                 {/* <!-- Image Content --> */}
-                <div className="space-y-6 flex flex-col">
+                <div className="space-y-6 flex flex-col order-1 md:order-2">
                     <div className="w-[350px] md:w-[450px] h-[200px]">
                         <img
                             src={img1}
