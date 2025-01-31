@@ -3,6 +3,7 @@ import AgroGenesis from "./AgroGenesis"
 import Statistics from "./Statistics"
 import WorldMap from "./WorldMap"
 import OurProducts from "../home/components/OurProducts"
+
 const AboutPage = () => {
   return <div>
     <CompanyAbout/>
@@ -10,7 +11,7 @@ const AboutPage = () => {
     <Statistics/>
     <OurProducts/>
     <WorldMap/>
-    
+   
    
   </div>;
 };

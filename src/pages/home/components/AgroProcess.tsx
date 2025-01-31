@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 const AgroProcess = () => {
@@ -75,6 +74,18 @@ const AgroProcess = () => {
           <span className="text-[#7f103a] text-3xl font-bold mb-4">05</span>
           <p className="text-gray-800">
             We load the products onto trucks and deliver them to customers.
+          </p>
+        </motion.div>
+        <motion.div 
+          variants={itemVariants} 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true }} 
+          className="flex flex-col items-start bg-white shadow-md p-6 rounded-lg"
+        >
+          <span className="text-[#7f103a] text-3xl font-bold mb-4">06</span>
+          <p className="text-gray-800">
+            We provide ongoing support to ensure customer satisfaction and resolve any issues.
           </p>
         </motion.div>
       </div>
