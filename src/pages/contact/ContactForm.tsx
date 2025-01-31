@@ -74,7 +74,8 @@ const ContactForm: React.FC = () => {
         <Input.TextArea placeholder="Message" rows={4} size="large" />
       </Form.Item>
 
-      <Button htmlType="submit" className="w-full !text-white !bg-[#7f103a]">
+      <Button htmlType="submit"
+        size="large" className="w-full !bg-[#800c3a] !text-white !border-none hover:!bg-pink-800 !transition-all !duration-500">
         Send
       </Button>
     </Form>
