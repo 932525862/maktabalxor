@@ -40,7 +40,8 @@ const Header = () => {
     if (storedLanguage) {
       i18n.changeLanguage(storedLanguage || "en");
     }else{
-      i18n.changeLanguage("en")
+      i18n.changeLanguage("en");
+    }
   }, [i18n]);
 
   return (
