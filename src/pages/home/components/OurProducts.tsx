@@ -2,15 +2,18 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Fresh from "../../../assets/allimg/freshp.webp";
 import Dried from "../../../assets/allimg/quritlgan.webp";
-
-const products = [
-  { id: 1, name: 'Fresh fruits', image: Fresh, link: '/production/wet' },
-  { id: 2, name: 'Dried fruits', image: Dried, link: '/production/dry' }
-];
+import { useTranslation } from "react-i18next";
 
 const OurProducts = () => {
   const navigate = useNavigate();
-  
+  const { t } = useTranslation();
+
+  // products massivini komponent ichida e'lon qilish
+  const products = [
+    { id: 1, name: t("about.titleP1"), image: Fresh, link: '/production/wet' },
+    { id: 2, name: t("about.titleP2"), image: Dried, link: '/production/dry' }
+  ];
+
   return (
     <div className="flex flex-col items-center py-10 px-4 md:px-10 bg-gray-100">
       <motion.h2 
@@ -19,9 +22,9 @@ const OurProducts = () => {
         transition={{ duration: 0.8 }}
         className="text-4xl md:text-4xl font-bold mb-16 text-center"
       >
-        Current Agro Products
+        {t("about.titleP")}
       </motion.h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12"> {/* Gap kattalashtirildi */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {products?.map((product, index) => (
           <motion.div  
             key={product.id} 

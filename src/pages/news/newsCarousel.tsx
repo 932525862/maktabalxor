@@ -5,7 +5,7 @@ import img1 from "../../assets/abouta2.jpg";
 
 //Problem with installation
 import 'swiper/swiper-bundle.css';
-// @ts-expect-error  prevents error
+
 import 'swiper/css/pagination';
 
 
