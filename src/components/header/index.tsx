@@ -35,6 +35,14 @@ const Header = () => {
     i18n.changeLanguage(value);
   };
 
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("i18nextLng");
+    if (storedLanguage) {
+      i18n.changeLanguage(storedLanguage || "en");
+    }else{
+      i18n.changeLanguage("en")
+  }, [i18n]);
+
   return (
     <header className="py-4 shadow">
       <div className="container">
@@ -49,7 +57,7 @@ const Header = () => {
 
           <div className="flex items-center gap-x-5">
             <Select
-              defaultValue="ru"
+              value={i18n.language}
               style={{ width: 60 }}
               onChange={handleChange}
               options={[
