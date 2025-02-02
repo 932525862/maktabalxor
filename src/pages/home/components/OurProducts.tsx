@@ -15,7 +15,7 @@ const OurProducts = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center py-10 px-4 md:px-10 bg-gray-100">
+    <div className="flex flex-col items-center py-10 px-4 md:px-10 bg-gray-100 scroll-smooth" id='production'>
       <motion.h2 
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
