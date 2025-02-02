@@ -1,7 +1,8 @@
-import bgImage from "../../assets/production/bg.jpg";
+import bgImage from "../../assets/allimg/011.jpg";
 import ContactForm from "./ContactForm";
-
+import { useTranslation } from "react-i18next";
 const ContactPage = () => {
+  const { t } = useTranslation();
   return (
     <section className="pt-10 pb-20">
       <div className="container">
@@ -10,7 +11,7 @@ const ContactPage = () => {
             <img src={bgImage} alt="milmax image" />
           </div>
           <h2 className="relative z-10 text-white font-bold text-lg md:text-5xl">
-            Contacts
+          {t("footer.contacts")}
           </h2>
         </div>
 
@@ -20,7 +21,7 @@ const ContactPage = () => {
           <div className="my-10">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d98122.04942949927!2d64.34039700818853!3d39.77750716421651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sUzbekistan%2C%20Bukhara%20city%2C%20Piridasgir%20street%2C%205A!5e0!3m2!1sru!2s!4v1738155164638!5m2!1sru!2s"
-              className="lg:w-[600px] w-full h-[450px]"
+              className="lg:w-[600px] w-full h-[450px] "
               allowFullScreen
               style={{ border: 0 }}
               loading="lazy"

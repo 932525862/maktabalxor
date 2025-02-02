@@ -5,26 +5,28 @@ import { CiLocationOn } from "react-icons/ci";
 import { SlPhone } from "react-icons/sl";
 import { IoMailOutline } from "react-icons/io5";
 import { RiFacebookCircleLine } from "react-icons/ri";
-import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { RiTelegramLine } from "react-icons/ri";
 import { IoChatbubblesOutline } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="py-20 bg-[#f3f3f3]">
-      <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-10 place-content-center">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Logo va ijtimoiy tarmoqlar */}
           <div className="flex flex-col items-center">
-            <div className="max-w-[200px] mb-10">
-              <img src={logo} alt="milmax logo" />
+            <div className="mb-10">
+              <img src={logo} alt="milmax logo" className="max-w-[200px]" />
             </div>
-            <div className="flex flex-col justify-center md:justify-between gap-5 md:flex-wrap">
-              <div className="w-max">
-                <h5 className="w-max font-medium text-[18px] mb-[10px] text-center">
-                  We are on social media:
+            <div className="flex flex-col gap-8">
+              <div className="flex flex-col items-center">
+                <h5 className="font-medium text-[18px] mb-3 text-center">
+                  {t("footer.footer1")}
                 </h5>
-                <div className="flex items-center justify-center gap-x-4 text-[24px]">
+                <div className="flex items-center justify-center gap-4 text-[24px]">
                   <Link to="/" className="transition hover:scale-110">
                     <RiFacebookCircleLine />
                   </Link>
@@ -33,11 +35,11 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-              <div className="w-max">
-                <h5 className="w-max font-medium text-[18px] mb-[10px]">
-                  We are in messengers:
+              <div className="flex flex-col items-center">
+                <h5 className="font-medium text-[18px] mb-3 text-center">
+                  {t("footer.footer2")}
                 </h5>
-                <div className="flex justify-center items-center gap-x-4 text-[24px]">
+                <div className="flex items-center justify-center gap-4 text-[24px]">
                   <Link to="/" className="transition hover:scale-110">
                     <FaWhatsapp />
                   </Link>
@@ -52,86 +54,93 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h4 className="text-[18px] text-center font-medium text-black mb-[10px]">
-              Menu
+          {/* Menyu */}
+          <div className="flex flex-col items-center">
+            <h4 className="text-[18px] font-medium text-black mb-4 text-center">
+              {t("footer.menu")}
             </h4>
-            <ul className="text-[16px] font-normal flex justify-center items-center flex-col text-center gap-5 flex-wrap">
+            <ul className="flex flex-col items-center gap-3 text-[16px]">
               <li>
-                <CustomLink to="/">Home</CustomLink>
+                <CustomLink to="/">{t("footer.home")}</CustomLink>
               </li>
               <li>
-                <CustomLink to="/about">About Us</CustomLink>
+                <CustomLink to="/about">{t("footer.about")}</CustomLink>
               </li>
               <li>
-                <CustomLink to="/news">News</CustomLink>
+                <CustomLink to="/news">{t("footer.news")}</CustomLink>
               </li>
               <li>
-                <CustomLink to="/production">Products</CustomLink>
+                <CustomLink to="/production">{t("footer.products")}</CustomLink>
               </li>
               <li>
-                <CustomLink to="/contact">Contact</CustomLink>
+                <CustomLink to="/contact">{t("footer.contacts")}</CustomLink>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-[18px] text-center font-medium text-black mb-[10px]">
-              Products
+          {/* Mahsulotlar */}
+          <div className="flex flex-col items-center">
+            <h4 className="text-[18px] font-medium text-black mb-4 text-center">
+              {t("footer.products")}
             </h4>
-            <ul className="text-[16px] font-normal flex justify-between items-center flex-col gap-y-[10px]">
+            <ul className="flex flex-col items-center gap-3 text-[16px]">
               <li>
-                <CustomLink to="/production">Dry product</CustomLink>
+                <CustomLink to="/production">
+                  {t("footer.dry_product")}
+                </CustomLink>
               </li>
               <li>
-                <CustomLink to="/production">Frozen product</CustomLink>
+                <CustomLink to="/production">
+                  {t("footer.frozen_product")}
+                </CustomLink>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-[18px] text-center font-medium text-black mb-[10px]">
-              Contacts
+          {/* Kontaktlar */}
+          <div className="flex flex-col items-center">
+            <h4 className="text-[18px] font-medium text-black mb-4 text-center">
+              {t("footer.contacts")}
             </h4>
-            <ul className="text-[16px] font-normal flex justify-center items-center flex-col gap-y-[10px]">
-              <li>
-                <address className="not-italic flex items-start gap-x-2">
-                  <span className="flex items-end text-xl">
-                    <CiLocationOn />
-                  </span>
-                  Uzbekistan, Bukhara city, Piridasgir street, 5A
+            <ul className="flex flex-col items-center gap-3 text-[16px]">
+              <li className="flex items-center gap-2">
+                <span className="text-xl">
+                  <CiLocationOn />
+                </span>
+                <address className="not-italic text-center">
+                  {t("footer.address")}
                 </address>
               </li>
               <li>
                 <Link
                   to="tel:998934729500"
-                  className="flex items-center gap-x-2"
+                  className="flex items-center gap-2"
                 >
-                  <span className="flex">
+                  <span>
                     <SlPhone />
-                  </span>{" "}
+                  </span>
                   998 93-472-95-00
                 </Link>
               </li>
               <li>
                 <Link
                   to="tel:+998 99-754-77-33"
-                  className="flex items-center gap-x-2"
+                  className="flex items-center gap-2"
                 >
                   <span>
                     <SlPhone />
-                  </span>{" "}
+                  </span>
                   +998 99-754-77-33
                 </Link>
               </li>
               <li>
                 <Link
                   to="mailto:sales@milmax.uz"
-                  className="flex items-center gap-x-2"
+                  className="flex items-center gap-2"
                 >
                   <span>
                     <IoMailOutline />
-                  </span>{" "}
+                  </span>
                   sales@milmax.uz
                 </Link>
               </li>

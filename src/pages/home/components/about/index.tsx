@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import about1 from "../../../../assets/allimg/IMG_4817.jpg";
-import about2 from "../../../../assets/allimg/OA PHOTO_191 копия.jpg";
-import batrbak from "../../../../assets/allimg/OA PHOTO_142 копия.jpg";
+import about1 from "../../../../assets/allimg/IMG_4781.jpg";
+import about2 from "../../../../assets/allimg/2.png";
+import batrbak from "../../../../assets/allimg/3.png";
 import { motion } from "framer-motion";
-
+import { useTranslation } from "react-i18next";
 const AboutUs = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative mb-20 lg:mb-[100px] pt-10">
       <div 
@@ -43,13 +44,10 @@ const AboutUs = () => {
         <div className="flex justify-end gap-x-20">
           <div className="w-full lg:w-1/2">
             <h2 className="text-[30px] text-center md:text-left md:text-[36px] font-bold uppercase leading-[48px] text-custom-text mb-5">
-              ABOUT MILMAX AGRO
+            {t("home.homeAt")}
             </h2>
             <p className="text-[18px] font-normal leading-[32px] text-custom-text mb-5">
-              We export dried fruits, legumes, and nuts worldwide, all produced
-              in Uzbekistan. This allows us to personally oversee the quality
-              control of our entire product range, right from local farmers and
-              gardeners.
+                {t("home.homeAp")}
             </p>
 
             <div className="md:flex gap-x-10 mb-10">
@@ -59,8 +57,7 @@ const AboutUs = () => {
                 </span>
                 <br />
                 <p className="text-[18px] font-normal leading-[32px] text-custom-text mb-5">
-                  years of experience in the supply of agricultural products
-                  worldwide{" "}
+                {t("home.homeAp1")}
                 </p>
               </div>
               <div className="md:w-1/2">
@@ -69,7 +66,7 @@ const AboutUs = () => {
                 </span>
                 <br />
                 <p className="text-[18px] font-normal leading-[32px] text-custom-text mb-5">
-                  partners of farms throughout Uzbekistan{" "}
+                {t("home.homeAp2")}
                 </p>
               </div>
             </div>
@@ -78,7 +75,7 @@ const AboutUs = () => {
   to={"/about"}
   className="flex justify-center md:w-max w-full border border-[#7f103a] py-5 px-15 rounded-[8px] text-[18px] text-[#7f103a] font-medium transition hover:bg-[#7f103a] hover:text-white"
 >
-  More detail
+{t("home.homeBB")}
 </Link>
           </div>
         </div>

@@ -1,17 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 type Stat = {
   value: string;
   label: string;
 };
-
-const stats: Stat[] = [
-  { value: "14,000 m²", label: "QAYTA ISHLASH MAJMUASI" },
-  { value: "202,000 m²", label: "ISSIQXONA KOMPLEKSLARI" },
-  { value: "1M m²", label: "QISHLOQ XO‘JALIK YERLARI" },
-  { value: "500+", label: "XODIMLAR" },
-];
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -19,11 +13,21 @@ const fadeInUp = {
 };
 
 const Statistics: React.FC = () => {
+  const { t } = useTranslation();
+  
+
+  // stats massivini komponent ichida aniqlaymiz
+  const stats: Stat[] = [
+    { value: "14,000 m²", label: t("about.titleR1") },
+    { value: "202,000 m²", label: t("about.titleR2") },
+    { value: "1M m²", label: t("about.titleR3") },
+    { value: "500+", label: t("about.titleR4") },
+  ];
+
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      
       <h1 className="text-4xl font-serif font-bold text-center text-gray-800 mb-16">
-      MILMAX RAQAMLARDA
+        {t("about.titleR")}
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {stats.map((stat, index) => (
@@ -49,3 +53,4 @@ const Statistics: React.FC = () => {
 };
 
 export default Statistics;
+  

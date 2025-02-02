@@ -6,6 +6,7 @@ import {
 } from "react-simple-maps";
 import { Dialog } from "@headlessui/react"; // Modal uchun
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 // Geo URL
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
@@ -49,6 +50,7 @@ interface GeographyItem {
 }
 
 const WorldMap: React.FC = () => {
+  const { t } = useTranslation();
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState<boolean>(false);
 
@@ -82,7 +84,7 @@ const WorldMap: React.FC = () => {
         className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-center text-gray-800 mb-4"
         style={{ marginTop: "100px" }}
       >
-        MILMAX LOGISTIKASI
+        {t("about.titleL")}
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
@@ -91,8 +93,7 @@ const WorldMap: React.FC = () => {
         className="text-base md:text-xl font-bold text-gray-700 text-center mb-4"
       >
         <p className="text-lg font-sans text-gray-700 leading-relaxed">
-          Milmax kompaniyasi ushbu xaritada ko‘rsatilgan davlatlarga o‘z
-          mahsulotlarini yetkazib bera oladi.
+        {t("about.titleL1")}
         </p>
       </motion.h2>
       <ComposableMap projectionConfig={{ scale: 150 }} className="mx-auto">
@@ -149,15 +150,14 @@ const WorldMap: React.FC = () => {
       >
         <div className="bg-white rounded-lg shadow-lg p-6 max-w-2xl w-full relative">
           <p className="text-xl font-bold mb-4 text-center text-lg font-sans text-gray-700 leading-relaxed">
-            Ushbu ro‘yxatdagi davlatlarga havo, dengiz va avtomobil yo‘llari
-            orqali mahsulotlarni yetkazib beramiz.
+          {t("about.titleL2")}
           </p>
           <div className="max-h-64 overflow-y-auto border border-gray-300 rounded-md">
             <table className="table-auto w-full border-collapse border border-gray-300">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="border border-gray-300 px-4 py-2">No.f</th>
-                  <th className="border border-gray-300 px-4 py-2">Country Name</th>
+                  <th className="border border-gray-300 px-4 py-2">No</th>
+                  <th className="border border-gray-300 px-4 py-2">{t("about.titleLD")}</th>
                 </tr>
               </thead>
               <tbody>
@@ -179,7 +179,7 @@ const WorldMap: React.FC = () => {
             onClick={() => setModalOpen(false)}
             className="mt-4 bg-[#7f103a] text-white px-8 py-2 rounded-md hover:bg-[#b46738] transition mx-auto block"
           >
-            Close
+            {t("about.titleLB")}
           </button>
         </div>
       </Dialog>
