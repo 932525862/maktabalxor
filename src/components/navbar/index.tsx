@@ -2,6 +2,7 @@ import { Drawer } from "antd";
 import { Link } from "react-router-dom";
 import CustomLink from "../custom-link";
 import { useTranslation } from "react-i18next";
+import { MdClose } from "react-icons/md"
 
 type PropsNavbar = {
   open: boolean;
@@ -29,7 +30,7 @@ const Navbar = ({ open, setOpen }: PropsNavbar) => {
             <CustomLink to="/news">{t("navbar.news")}</CustomLink>
           </li>
           <li>
-            <CustomLink to="/production">{t("navbar.product")}</CustomLink>
+            <a href="#production">{t("navbar.product")}</a>
           </li>
           <li>
             <CustomLink to="/contact">{t("navbar.contact")}</CustomLink>
@@ -37,25 +38,30 @@ const Navbar = ({ open, setOpen }: PropsNavbar) => {
         </ul>
       </div>
 
-      <Drawer title="Basic Drawer" onClose={onClose} open={open}>
-        <ul className="flex flex-col gap-x-5 text-[#1d1d1d]">
-          <li>
-            <Link to="/">{t("navbar.home")}</Link>
+      <Drawer closeIcon={<MdClose className="text-2xl text-gray-600" />} onClose={onClose} open={open}>
+        <ul className="flex flex-col gap-x-5 gap-y-10">
+          <li onClick={onClose} className="!text-center">
+            <Link className="!text-[22px] !font-semibold !text-black hover:!text-[#7f103a] !text-center" to="/">{t("navbar.home")}</Link>
           </li>
-          <li>
-            <Link to="/about">{t("navbar.about")}</Link>
+          <li onClick={onClose} className="!text-center">
+            <Link className="!text-[22px] !font-semibold !text-black hover:!text-[#7f103a] !text-center" to="/about">{t("navbar.about")}</Link>
           </li>
-          <li>
-            <Link to="/news">{t("navbar.news")}</Link>
+          <li onClick={onClose} className="!text-center">
+            <Link className="!text-[22px] !font-semibold !text-black hover:!text-[#7f103a] !text-center" to="/news">{t("navbar.news")}</Link>
           </li>
-          <li>
-            <Link to="/production">{t("navbar.product")}</Link>
+          <li onClick={onClose} className="!text-center">
+            <a
+              className="!text-[22px] !font-semibold !text-black hover:!text-[#7f103a] !text-center"
+              href="/#production"
+            >
+              {t("navbar.product")}
+            </a>
           </li>
-          <li>
-            <Link to="/contact">{t("navbar.contact")}</Link>
+          <li onClick={onClose} className="!text-center">
+            <Link className="!text-[22px] !font-semibold !text-black hover:!text-[#7f103a] !text-center" to="/contact">{t("navbar.contact")}</Link>
           </li>
         </ul>
-      </Drawer>
+      </Drawer >
     </>
   );
 };

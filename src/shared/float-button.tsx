@@ -15,6 +15,7 @@ const SocialMediaButton = () => {
   return (
     <>
       <FloatButton.Group
+        className="custom-float-btn-group"
         open={open}
         trigger="click"
         style={{ insetInlineEnd: 24, bottom: 24 }}

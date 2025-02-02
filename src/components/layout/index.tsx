@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 
 const Layout = () => {
-  
+
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="mt-[75px]">
         <Outlet />
       </main>
       <Footer />

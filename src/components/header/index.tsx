@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "../navbar";
-import logo from "../../assets//logo/png/001.png";
+// import logo from "../../assets//logo/png/001.png";
+import logo from "../../assets/logo/logo.svg";
 import { Select } from "antd";
 import { AlignRightOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
@@ -39,13 +40,13 @@ const Header = () => {
     const storedLanguage = localStorage.getItem("i18nextLng");
     if (storedLanguage) {
       i18n.changeLanguage(storedLanguage || "en");
-    }else{
+    } else {
       i18n.changeLanguage("en");
     }
   }, [i18n]);
 
   return (
-    <header className="py-4 shadow">
+    <header className="py-4 shadow fixed top-0 h-[75px] px-5 bg-white w-full z-50">
       <div className="container">
         <div className="flex justify-between items-center">
           <div className="flex items-center justify-between gap-x-20">
