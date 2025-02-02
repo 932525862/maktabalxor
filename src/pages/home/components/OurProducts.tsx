@@ -43,7 +43,7 @@ const OurProducts = () => {
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: index * 0.3 }}
-              className="absolute bottom-4 left-0 right-0 bg-white text-orange-700 font-bold text-center py-3 px-5 rounded-md text-lg md:text-2xl"
+              className="absolute bottom-4 left-0 right-0 bg-white text-[#7f103a] font-bold text-center py-3 px-5 rounded-md text-lg md:text-2xl"
             >
               {product.name}
             </motion.div>
