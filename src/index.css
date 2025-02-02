@@ -16,6 +16,10 @@ h6 {
   font-family: "Averta", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -33,7 +37,7 @@ h6 {
 
 .ant-float-btn-group {
   button {
-    background-color: #d58044;
+    background-color: #800c3a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,11 +64,15 @@ h6 {
   }
 }
 .ant-btn:hover {
-  background-color: #800c3a!important;
-  opacity: 0.9!important;
-  color: white!important;
+  background-color: #800c3a !important;
+  opacity: 0.9 !important;
+  color: white !important;
 }
 
 body {
-  overflow-x: hidden!important;
+  overflow-x: hidden !important;
+}
+
+.drawer__link {
+  color: black !important;
 }
