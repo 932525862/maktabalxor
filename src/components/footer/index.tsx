@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import CustomLink from "../custom-link";
-import logo from "../../assets/logo/png/001.png";
+import logo from "../../assets/logo/SVG.svg";
 import { CiLocationOn } from "react-icons/ci";
 import { SlPhone } from "react-icons/sl";
 import { IoMailOutline } from "react-icons/io5";
@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo va ijtimoiy tarmoqlar */}
           <div className="flex flex-col items-center">
-            <div className="mb-10">
+            <div className="mb-10 w-[200px]">
               <img src={logo} alt="milmax logo" className="max-w-[200px]" />
             </div>
             <div className="flex flex-col gap-8">
@@ -85,12 +85,12 @@ const Footer = () => {
             </h4>
             <ul className="flex flex-col items-center gap-3 text-[16px]">
               <li>
-                <CustomLink to="/production">
+                <CustomLink to="/production/dry">
                   {t("footer.dry_product")}
                 </CustomLink>
               </li>
               <li>
-                <CustomLink to="/production">
+                <CustomLink to="/production/wet">
                   {t("footer.frozen_product")}
                 </CustomLink>
               </li>
