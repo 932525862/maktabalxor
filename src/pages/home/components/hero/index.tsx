@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import hero1 from "../../../../assets/allimg/2.png";
-import hero2 from "../../../../assets/allimg/OA PHOTO_11 копия.jpg";
-import hero3 from "../../../../assets/allimg/OA PHOTO_65 копия.jpg";
-import hero4 from "../../../../assets/allimg/OA PHOTO_70 копия.jpg";
+import hero2 from "../../../../assets/allimg/5.jpg";
+import hero3 from "../../../../assets/allimg/6.jpg";
+import hero4 from "../../../../assets/allimg/7.jpg";
 import hero5 from "../../../../assets/allimg/010.jpg";
 import hero6 from "../../../../assets/allimg/011.jpg"
 

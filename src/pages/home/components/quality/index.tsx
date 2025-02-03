@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import Img1 from "../../../../assets/allimg/tokzorlar-iaratish.jpg";
-import Img2 from "../../../../assets/allimg/OA PHOTO_85 копия.jpg";
-import Img3 from "../../../../assets/allimg/IMG_4811.jpg";
-import Img4 from "../../../../assets/allimg/IMG_4781.jpg";
+import Img1 from "../../../../assets/allimg/q1.jpg";
+import Img2 from "../../../../assets/allimg/q2.jpg";
+import Img3 from "../../../../assets/allimg/q3.jpg";
+import Img4 from "../../../../assets/allimg/q4.jpg";
 import { useTranslation } from "react-i18next";
 const AgroQuality: React.FC = () => {
   const { t } = useTranslation();
