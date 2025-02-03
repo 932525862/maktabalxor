@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import img1 from "../../assets/abouta2.jpg";
-import img2 from "../../assets/about2.jpg";
 import NewsCarousel from "./newsCarousel";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";

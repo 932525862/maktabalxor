@@ -6,7 +6,7 @@ import orangeImg from "../../assets/production/orangeImg.jpg"
 import grapesImg from "../../assets/production/grapesImg.jpg"
 import bg from "../../assets/production/bg.jpg"
 import { useEffect, useState } from "react"
-import ProductDrawer from "./drawer"
+import ProductDrawer from "../../components/drawer"
 const WetFruits = () => {
   const [open, setOpen] = useState<boolean>(false);
 
