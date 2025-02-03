@@ -1,0 +1,83 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact",
+    "news": "News",
+    "product": "Products"
+  },
+  "about": {
+    "title": "ABOUT THE COMPANY",
+    "title2": "What kind of company is Milmax?",
+    "title3": "LEADING COMMISSION FOR AGRICULTURAL PRODUCT EXPORT",
+    "title4": "A company supplying dried and fresh fruits, legumes, and nuts.",
+    "titlep1": "We believe that the time has come to showcase our country's agricultural potential on a global scale through modern solutions, and we have already begun a revolutionary transformation of the industry in the country.",
+    "titlep2": "We are not alone on this journey; in addition to collaborating with the world's leading equipment manufacturers and international consultants, the partnership between the Government of Uzbekistan and the World Bank with Milmax signifies that the company has emerged as the primary supplier of Uzbekistan's agricultural products to the international market.",
+    "titleQ": "History of Agriculture in Uzbekistan",
+    "titleQ1": "AGRO-GENESIS",
+    "titleQ1p": "Agriculture in Uzbekistan dates back to 3000 BC when the first farming and irrigation practices developed. In particular, the use of qanat systems and complex water management techniques for irrigation became a fundamental aspect of the region’s agriculture, significantly contributing to economic development. These practices not only influenced Uzbek lands but also played a crucial role in advancing agriculture throughout Central Asia, shaping a distinctive culture and technological advancements.",
+    "titleQ2": "MIDDLE AGES",
+    "titleQ2p": "During this period, Islamic agricultural innovations were introduced, including advanced irrigation techniques, new methods that increased crop cultivation efficiency, and improved irrigation systems. This era also witnessed the development of agricultural science and practices under various empires, such as the Samanids and the Timurids, leading to the formation of new agrarian systems based on scientific discoveries and technological exchanges.",
+    "titleR": "MILMAX IN NUMBERS",
+    "titleR1": "PROCESSING COMPLEX",
+    "titleR2": "GREENHOUSE COMPLEXES",
+    "titleR3": "AGRICULTURAL LANDS",
+    "titleR4": "EMPLOYEES",
+    "titleP": "Our Products",
+    "titleP1": "Fresh Fruits",
+    "titleP2": "Dried Fruits",
+    "titleL": "MILMAX LOGISTICS",
+    "titleL1": "Milmax company can supply its products to the countries shown on this map.",
+    "titleL2": "We deliver products to these countries by air, sea, and road transport.",
+    "titleLB": "Close",
+    "titleLD": "Country Names"
+},
+
+"home": {
+  "homeB": "Milmax exports dried and fresh fruits from Uzbekistan to the whole world.",
+  "homeB1": "We deliver dried and fresh fruits from Uzbekistan. We offer delivery terms that suit you and fully guarantee the quality and integrity of the products.",
+  "homeBB": "More details",
+  "homeAt": "About Milmax",
+  "homeAp": "We export dried and fresh fruits grown in Uzbekistan to the whole world. To ensure the high quality of our products, we carefully control every stage, including direct cooperation with local farmers and gardeners.",
+  "homeAp1": "Years of experience in delivering agricultural products worldwide",
+  "homeAp2": "Partners of farms across Uzbekistan",
+  "milmax": "How does Milmax work?",
+  "milmax1": "We select agricultural products from our partner farmers based on customer demands.",
+  "milmax2": "We check the selected products for quality and damage.",
+  "milmax3": "After the inspection, we pack the products in eco-friendly, durable, and spacious containers.",
+  "milmax4": "We store the products in special conditions for 24 to 48 hours, depending on the type.",
+  "milmax5": "We load the products onto trucks and deliver them to customers.",
+  "milmax6": "We provide ongoing support to ensure customer satisfaction and resolve any issues that may arise.",
+  "milmaxqt": "Why are Milmax products of high quality? Let’s take a look at the reasons together.",
+  "milmaxq1": "01. Fertile lands",
+  "milmaxq1p": "Fertile lands play an important role in Uzbekistan’s agriculture. These lands ensure the effective growth of crops. Many regions of Uzbekistan have natural conditions and climate that are suitable for fertility, creating the opportunity for high yields. The raw materials used in the production of Milmax products are grown on these fertile lands, which enhances the quality of the products.",
+  "milmax2": "02. High-quality products",
+  "milmax2p": "Milmax products are made using modern technologies and advanced production processes. The long-term experience and scientific approach in Uzbekistan’s agriculture play a significant role in ensuring product quality. Products are produced with food safety and environmental requirements in mind.",
+  "milmax3": "03. Experienced staff",
+  "milmax3p": "Experienced specialists and agronomists actively participate in the production of Milmax products. The timely experience and knowledge gained in Uzbekistan’s agriculture significantly enhance the quality of Milmax products. Specialists correctly assess the natural conditions of the land and help in the efficient cultivation of products.",
+  "milmax4": "04. Factory meeting world standards",
+  "contactB":"Send",
+  "contactM":"Your information has been successfully submitted. We will contact you shortly.",
+  "milmax4p": "Milmax products are produced using high-quality technologies. The factories are equipped with equipment that meets international standards, ensuring the products are suitable for international markets. Uzbekistan’s agricultural infrastructure and modern factories allow for the successful implementation of this process."
+},
+
+"footer": {
+  "footer1": "We are available on social media:",
+  "footer2": "We are available on messengers:",
+  "menu": "Menu",
+  "home": "Home",
+  "about": "About Us",
+  "news": "News",
+  "products": "Products",
+  "contacts": "Contact",
+  "address": "Uzbekistan, Bukhara city, Piridasgir street, 5A",
+  "phone1": "998 93-472-95-00",
+  "phone2": "+998 99-754-77-33",
+  "email": "sales@milmax.uz",
+  "dry_product": "Dry product",
+  "frozen_product": "Frozen fruit"
+}
+
+
+
+}

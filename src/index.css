@@ -1,0 +1,78 @@
+@import url("./style/helvitica.css");
+@import url("./style/tt.css");
+
+@import "tailwindcss";
+
+* {
+  font-family: "TT Norms", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Averta", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@theme {
+  --color-custom-text: #242424;
+  --color-custom-red: #800c3a;
+  --color-custom-green: #0d684d;
+  --color-custom-orange: #d58044;
+  --color-custom-dark: #05184c;
+  --color-custom-blue: #8cb1cd;
+}
+
+.ant-float-btn-group {
+  button {
+    background-color: #800c3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+  }
+
+  .ant-float-btn-group-wrap {
+    margin-bottom: 16px;
+  }
+
+  .ant-float-btn-body {
+    background-color: transparent;
+
+    .ant-float-btn-icon {
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 32px;
+      }
+    }
+  }
+}
+.ant-btn:hover {
+  background-color: #800c3a !important;
+  opacity: 0.9 !important;
+  color: white !important;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+.drawer__link {
+  color: black !important;
+}
