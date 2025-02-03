@@ -5,11 +5,13 @@ import { Select } from "antd";
 import { AlignRightOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLanguage } from "../../context/locales";
 
 const Header = () => {
 
   const { i18n } = useTranslation()
   const [open, setOpen] = useState(false);
+  const { changeLanguage } = useLanguage();
 
   useEffect(() => {
     // Media query ni aniqlash
@@ -32,6 +34,7 @@ const Header = () => {
   }, []);
 
   const handleChange = (value: string) => {
+    changeLanguage(value);  
     i18n.changeLanguage(value);
   };
 
