@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "../navbar";
-// import logo from "../../assets//logo/png/001.png";
-import logo from "../../assets/logo/logo.svg";
+import logo from "../../assets/logo/SVG.svg";
 import { Select } from "antd";
 import { AlignRightOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
