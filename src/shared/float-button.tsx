@@ -34,42 +34,7 @@ const SocialMediaButton = () => {
             fontSize: "1.5rem",
           }}
         />
-        {/* <FloatButton
-          icon={<TwitterOutlined />}
-          style={{
-            width: 60,
-            height: 60,
-            backgroundColor: "#1DA1F2",
-            fontSize: "1.5rem",
-          }}
-        /> */}
-        {/* <FloatButton
-          icon={<WhatsAppOutlined />}
-          style={{
-            width: 60,
-            height: 60,
-            backgroundColor: "#25D366",
-            fontSize: "1.5rem",
-          }}
-        /> */}
-        {/* <FloatButton
-          icon={<InstagramOutlined />}
-          style={{
-            width: 60,
-            height: 60,
-            backgroundColor: "#C13584",
-            fontSize: "1.5rem",
-          }}
-        /> */}
-        {/* <FloatButton
-          icon={<SendOutlined />} // Telegram
-          style={{
-            width: 60,
-            height: 60,
-            backgroundColor: "#0088cc",
-            fontSize: "1.5rem",
-          }}
-        /> */}
+       
         
       </FloatButton.Group>
     </>
