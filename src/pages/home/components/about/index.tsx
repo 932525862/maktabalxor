@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import about1 from "../../../../assets/allimg/IMG_4781.jpg";
+import about1 from "../../../../assets/allimg/011.jpg";
 import about2 from "../../../../assets/allimg/2.png";
 import batrbak from "../../../../assets/allimg/3.png";
 import { motion } from "framer-motion";
