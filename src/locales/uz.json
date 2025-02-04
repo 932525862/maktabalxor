@@ -64,9 +64,10 @@
     "header": "Bizning Yangiliklar",
     "btn": "Ko'proq"
   },
-  "product": {
+  "products": {
     "dry": "Quritilgan mevalar",
-    "wet": "Ho'l mevalar"
+    "wet": "Ho'l mevalar",
+    "btn" : "Ariza Qoldirish"
   },
   "footer": {
     "footer1": "Biz ijtimoiy tarmoqlarda mavjudmiz:",

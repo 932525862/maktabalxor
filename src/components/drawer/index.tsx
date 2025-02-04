@@ -2,6 +2,8 @@ import { CloseOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
 import { useState } from "react";
 import { useLanguage } from "../../context/locales";
+import { useTranslation } from "react-i18next";
+
 
 type ProdTypes = "wet" | "dry";
 
@@ -25,6 +27,8 @@ interface ProductDrawerProps {
 }
 export default function ProductDrawer({ open, onClose, data }: ProductDrawerProps) {
   console.log(data, "Data from drawer");
+
+  const { t } = useTranslation();
 
   let { language } = useLanguage();
   language = language.split("")[0].toUpperCase() + language.split("").slice(1).join("");
@@ -71,7 +75,7 @@ export default function ProductDrawer({ open, onClose, data }: ProductDrawerProp
           />
           <div className="flex items-center justify-center text-white h-16">
             <button className="bg-green-600 text-white font-bold px-6 py-3 rounded-lg transition-transform ease-in-out hover:scale-105 duration-500 hover:bg-white hover:text-green-600 hover:border-2 w-full hover:border-green-600">
-              Оставить заявку
+              {t("products.btn")}
             </button>
           </div>
 
