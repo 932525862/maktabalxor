@@ -1,70 +1,55 @@
-import React, { useState, useEffect } from "react";
-import Patr from "../../assets/allimg/3.png";
+import React from "react";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-const CompanyAbout: React.FC = () => {
+type Stat = {
+  value: string;
+  label: string;
+};
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+};
+
+const Statistics: React.FC = () => {
   const { t } = useTranslation();
-  const [loading, setLoading] = useState(true);
+  
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 1500);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="w-full mb-8 animate-pulse">
-        <div className="relative w-full h-82 bg-gray-300"></div>
-        <div className="max-w-6xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div>
-            <div className="h-10 bg-gray-300 w-3/4 mb-4"></div>
-            <div className="h-6 bg-gray-300 w-1/2 mb-4"></div>
-            <div className="h-4 bg-gray-300 w-full mb-6"></div>
-          </div>
-          <div className="space-y-6">
-            <div className="h-4 bg-gray-300 w-full"></div>
-            <div className="h-4 bg-gray-300 w-5/6"></div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  // stats massivini komponent ichida aniqlaymiz
+  const stats: Stat[] = [
+    { value: "14,000 m²", label: t("about.titleR1") },
+    { value: "202,000 m²", label: t("about.titleR2") },
+    { value: "1M m²", label: t("about.titleR3") },
+    { value: "500+", label: t("about.titleR4") },
+  ];
 
   return (
-    <div className="w-full mb-8">
-      <div className="relative w-full h-82 flex flex-col items-center justify-center text-white text-5xl font-extrabold">
-        <div
-          className="absolute inset-0 w-full h-full bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${Patr})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        ></div>
-        <span className="relative text-2xl md:text-6xl lg:text-7xl ">{t("about.title")}</span>
-      </div>
-      <div className="max-w-6xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900">
-            {t("about.title2")}
-          </h1>
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#7f103a] mt-4">
-            {t("about.title3")}
-          </h2>
-          <p className="text-gray-700 text-lg mt-6">
-            {t("about.title4")}
-          </p>
-        </div>
-        <div className="text-gray-700 text-lg space-y-6">
-          <p className="text-base md:text-lg">
-            {t("about.titlep1")}
-          </p>
-          <p className="text-base md:text-lg">
-            {t("about.titlep2")}
-          </p>
-        </div>
+    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+      <h1 className="text-4xl font-serif font-bold text-center text-gray-800 mb-16">
+        {t("about.titleR")}
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        {stats.map((stat, index) => (
+          <motion.div
+            key={index}
+            className="text-center group"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={fadeInUp}
+          >
+            <p className="text-[#7f103a] text-4xl font-bold group-hover:scale-105 group-hover:text-orange-700 transition transform duration-300">
+              {stat.value}
+            </p>
+            <p className="text-gray-600 text-lg font-medium mt-2 group-hover:text-gray-800 transition duration-300">
+              {stat.label}
+            </p>
+          </motion.div>
+        ))}
       </div>
     </div>
   );
 };
 
-export default CompanyAbout;
+export default Statistics;
