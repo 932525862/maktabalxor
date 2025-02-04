@@ -24,18 +24,18 @@ const Footer = () => {
             <div className="flex flex-col gap-8">
               <div className="flex flex-col items-center">
                 <h5 className="font-medium text-[18px] mb-3 text-center">
-                  {t("footer.footer1")}
+                 {t("home.homeB")}
                 </h5>
-                <div className="flex items-center justify-center gap-4 text-[24px]">
+                {/* <div className="flex items-center justify-center gap-4 text-[24px]">
                   <Link to="/" className="transition hover:scale-110">
                     <RiFacebookCircleLine />
                   </Link>
                   <Link to="/" className="transition hover:scale-110">
                     <FaInstagram />
                   </Link>
-                </div>
+                </div> */}
               </div>
-              <div className="flex flex-col items-center">
+              {/* <div className="flex flex-col items-center">
                 <h5 className="font-medium text-[18px] mb-3 text-center">
                   {t("footer.footer2")}
                 </h5>
@@ -50,7 +50,7 @@ const Footer = () => {
                     <IoChatbubblesOutline />
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
