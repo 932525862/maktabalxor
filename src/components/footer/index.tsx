@@ -4,10 +4,7 @@ import logo from "../../assets/logo/SVG.svg";
 import { CiLocationOn } from "react-icons/ci";
 import { SlPhone } from "react-icons/sl";
 import { IoMailOutline } from "react-icons/io5";
-import { RiFacebookCircleLine } from "react-icons/ri";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { RiTelegramLine } from "react-icons/ri";
-import { IoChatbubblesOutline } from "react-icons/io5";
+
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -26,31 +23,9 @@ const Footer = () => {
                 <h5 className="font-medium text-[18px] mb-3 text-center">
                  {t("home.homeB")}
                 </h5>
-                {/* <div className="flex items-center justify-center gap-4 text-[24px]">
-                  <Link to="/" className="transition hover:scale-110">
-                    <RiFacebookCircleLine />
-                  </Link>
-                  <Link to="/" className="transition hover:scale-110">
-                    <FaInstagram />
-                  </Link>
-                </div> */}
+               
               </div>
-              {/* <div className="flex flex-col items-center">
-                <h5 className="font-medium text-[18px] mb-3 text-center">
-                  {t("footer.footer2")}
-                </h5>
-                <div className="flex items-center justify-center gap-4 text-[24px]">
-                  <Link to="/" className="transition hover:scale-110">
-                    <FaWhatsapp />
-                  </Link>
-                  <Link to="/" className="transition hover:scale-110">
-                    <RiTelegramLine />
-                  </Link>
-                  <Link to="/" className="transition hover:scale-110">
-                    <IoChatbubblesOutline />
-                  </Link>
-                </div>
-              </div> */}
+              
             </div>
           </div>
 
