@@ -31,53 +31,58 @@
     "titleL2": "We deliver products to these countries by air, sea, and road transport.",
     "titleLB": "Close",
     "titleLD": "Country Names"
-},
+  },
 
-"home": {
-  "homeB": "Milmax exports dried and fresh fruits from Uzbekistan to the whole world.",
-  "homeB1": "We deliver dried and fresh fruits from Uzbekistan. We offer delivery terms that suit you and fully guarantee the quality and integrity of the products.",
-  "homeBB": "More details",
-  "homeAt": "About Milmax",
-  "homeAp": "We export dried and fresh fruits grown in Uzbekistan to the whole world. To ensure the high quality of our products, we carefully control every stage, including direct cooperation with local farmers and gardeners.",
-  "homeAp1": "Years of experience in delivering agricultural products worldwide",
-  "homeAp2": "Partners of farms across Uzbekistan",
-  "milmax": "How does Milmax work?",
-  "milmax1": "We select agricultural products from our partner farmers based on customer demands.",
-  "milmax2": "We check the selected products for quality and damage.",
-  "milmax3": "After the inspection, we pack the products in eco-friendly, durable, and spacious containers.",
-  "milmax4": "We store the products in special conditions for 24 to 48 hours, depending on the type.",
-  "milmax5": "We load the products onto trucks and deliver them to customers.",
-  "milmax6": "We provide ongoing support to ensure customer satisfaction and resolve any issues that may arise.",
-  "milmaxqt": "Why are Milmax products of high quality? Let’s take a look at the reasons together.",
-  "milmaxq1": " Fertile lands",
-  "milmaxq1p": "Fertile lands play an important role in Uzbekistan’s agriculture. These lands ensure the effective growth of crops. Many regions of Uzbekistan have natural conditions and climate that are suitable for fertility, creating the opportunity for high yields. The raw materials used in the production of Milmax products are grown on these fertile lands, which enhances the quality of the products.",
-  "milmax2": " High-quality products",
-  "milmax2p": "Milmax products are made using modern technologies and advanced production processes. The long-term experience and scientific approach in Uzbekistan’s agriculture play a significant role in ensuring product quality. Products are produced with food safety and environmental requirements in mind.",
-  "milmax3": " Experienced staff",
-  "milmax3p": "Experienced specialists and agronomists actively participate in the production of Milmax products. The timely experience and knowledge gained in Uzbekistan’s agriculture significantly enhance the quality of Milmax products. Specialists correctly assess the natural conditions of the land and help in the efficient cultivation of products.",
-  "milmax4": " Factory meeting world standards",
-  "contactB":"Send",
-  "contactM":"Your information has been successfully submitted. We will contact you shortly.",
-  "milmax4p": "Milmax products are produced using high-quality technologies. The factories are equipped with equipment that meets international standards, ensuring the products are suitable for international markets. Uzbekistan’s agricultural infrastructure and modern factories allow for the successful implementation of this process."
-},
+  "home": {
+    "homeB": "Milmax exports dried and fresh fruits from Uzbekistan to the whole world.",
+    "homeB1": "We deliver dried and fresh fruits from Uzbekistan. We offer delivery terms that suit you and fully guarantee the quality and integrity of the products.",
+    "homeBB": "More details",
+    "homeAt": "About Milmax",
+    "homeAp": "We export dried and fresh fruits grown in Uzbekistan to the whole world. To ensure the high quality of our products, we carefully control every stage, including direct cooperation with local farmers and gardeners.",
+    "homeAp1": "Years of experience in delivering agricultural products worldwide",
+    "homeAp2": "Partners of farms across Uzbekistan",
+    "milmax": "How does Milmax work?",
+    "milmax1": "We select agricultural products from our partner farmers based on customer demands.",
+    "milmax2": "We check the selected products for quality and damage.",
+    "milmax3": "After the inspection, we pack the products in eco-friendly, durable, and spacious containers.",
+    "milmax4": "We store the products in special conditions for 24 to 48 hours, depending on the type.",
+    "milmax5": "We load the products onto trucks and deliver them to customers.",
+    "milmax6": "We provide ongoing support to ensure customer satisfaction and resolve any issues that may arise.",
+    "milmaxqt": "Why are Milmax products of high quality? Let’s take a look at the reasons together.",
+    "milmaxq1": " Fertile lands",
+    "milmaxq1p": "Fertile lands play an important role in Uzbekistan’s agriculture. These lands ensure the effective growth of crops. Many regions of Uzbekistan have natural conditions and climate that are suitable for fertility, creating the opportunity for high yields. The raw materials used in the production of Milmax products are grown on these fertile lands, which enhances the quality of the products.",
+    "milmax2": " High-quality products",
+    "milmax2p": "Milmax products are made using modern technologies and advanced production processes. The long-term experience and scientific approach in Uzbekistan’s agriculture play a significant role in ensuring product quality. Products are produced with food safety and environmental requirements in mind.",
+    "milmax3": " Experienced staff",
+    "milmax3p": "Experienced specialists and agronomists actively participate in the production of Milmax products. The timely experience and knowledge gained in Uzbekistan’s agriculture significantly enhance the quality of Milmax products. Specialists correctly assess the natural conditions of the land and help in the efficient cultivation of products.",
+    "milmax4": " Factory meeting world standards",
+    "contactB": "Send",
+    "contactM": "Your information has been successfully submitted. We will contact you shortly.",
+    "milmax4p": "Milmax products are produced using high-quality technologies. The factories are equipped with equipment that meets international standards, ensuring the products are suitable for international markets. Uzbekistan’s agricultural infrastructure and modern factories allow for the successful implementation of this process."
+  },
+  "news": {
+    "header": "Our news",
+    "btn": "More"
+  },
+  "products": {
+    "dry": "Dried Products",
+    "wet": "Fresh Products"
+  },
 
-"footer": {
-  "footer1": "We are available on social media:",
-  "footer2": "We are available on messengers:",
-  "menu": "Menu",
-  "home": "Home",
-  "about": "About Us",
-  "news": "News",
-  "products": "Products",
-  "contacts": "Contact",
-  "address": "Uzbekistan, Bukhara city, Piridasgir street, 5A",
-  "phone1": "998 93-472-95-00",
-  "phone2": "+998 99-754-77-33",
-  "email": "sales@milmax.uz",
-  "dry_product": "Dry product",
-  "frozen_product": "Frozen fruit"
-}
-
-
-
+  "footer": {
+    "footer1": "We are available on social media:",
+    "footer2": "We are available on messengers:",
+    "menu": "Menu",
+    "home": "Home",
+    "about": "About Us",
+    "news": "News",
+    "products": "Products",
+    "contacts": "Contact",
+    "address": "Uzbekistan, Bukhara city, Piridasgir street, 5A",
+    "phone1": "998 93-472-95-00",
+    "phone2": "+998 99-754-77-33",
+    "email": "sales@milmax.uz",
+    "dry_product": "Dry product",
+    "frozen_product": "Frozen fruit"
+  }
 }

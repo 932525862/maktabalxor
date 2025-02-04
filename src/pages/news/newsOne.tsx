@@ -1,6 +1,7 @@
 import NewsCarousel from "./newsCarousel";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useLanguage } from "../../context/locales";
 
 interface NewsOne {
     titleUz: string,
@@ -19,6 +20,9 @@ interface NewsOne {
 
 export default function NewsOnePage() {
     const { id } = useParams<{ id: string }>();
+    let { language } = useLanguage();
+    language = language.split("")[0].toUpperCase() + language.split("").slice(1).join("");
+
 
     const [newsOne, setNewsOne] = useState<NewsOne>();
 
@@ -53,13 +57,13 @@ export default function NewsOnePage() {
 
     return (
         <div className="max-w-7xl mx-auto container h-full !mt-[100px]">
-            <h1 className="text-2xl md:text-4xl font-bold my-10 md:mt-10 md:mb-0 text-center">{newsOne && newsOne[`titleUz` as keyof NewsOne]}</h1>
+            <h1 className="text-2xl md:text-4xl font-bold my-10 md:mt-10 md:mb-0 text-center">{newsOne && newsOne[`title${language}` as keyof NewsOne]}</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8 place-items-center mt-0 max-h-full h-full lg:h-[80vh]">
                 {/* <!-- Text Content --> */}
                 <div className="lg:p-5 p-0 text-center order-2 lg:order-1">
                     <div className="lg:p-5 p-0 text-center order-2 lg:order-1">
                         {newsOne && (
-                            <div dangerouslySetInnerHTML={{ __html: newsOne["descriptionUz" as keyof NewsOne] || "" }} />
+                            <div dangerouslySetInnerHTML={{ __html: newsOne[`description${language}` as keyof NewsOne] || "" }} />
                         )}
                     </div>
                 </div>
