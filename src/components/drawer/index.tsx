@@ -20,6 +20,7 @@ interface DataProps {
   type: ProdTypes;
 }
 
+
 interface ProductDrawerProps {
   open: boolean;
   onClose: () => void;

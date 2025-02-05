@@ -67,7 +67,7 @@ const WetFruits = () => {
     <>
       <div className="container max-w-7xl h-full w-full mx-auto flex flex-col justify-between">
         <div className="uppercase flex text-center justify-center items-center h-[130px] text-2xl md:text-4xl rounded-3xl mt-5 text-white font-bold bg-[url('/assets/bg.jpg')]" style={{ backgroundImage: `url(${bg})` }}>{t("products.wet")}</div>
-        <div className="flex flex-wrap justify-center items-center gap-5 my-5">
+        <div className="flex flex-wrap justify-center items-center gap-5 my-5 py-20">
           {wetProducts ? Array.from(wetProducts)?.map((item, idx) => (
             <>
               <div className="flex group cursor-pointer items-center justify-center w-[250px] h-[250px] p-3 hover:scale-105 transition-all duration-500 ease-in-out hover:grayscale-50 relative" onClick={() => { setOpen(true); setSingleData(item) }} key={idx}>
