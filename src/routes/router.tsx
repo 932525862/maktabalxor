@@ -5,7 +5,6 @@ import {
   ContactPage,
   HomePage,
   Layout,
-  ProductionPage,
   WetFruits,
   DryFruits,
   NewsSinglePage,
@@ -61,14 +60,6 @@ const Router = [
         element: (
           <Suspense fallback={<Loading />}>
             <NewsSinglePage />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/production",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <ProductionPage />
           </Suspense>
         ),
       },
