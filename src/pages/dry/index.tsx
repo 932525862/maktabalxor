@@ -72,7 +72,7 @@ const DryFruits = () => {
             </div>
           ))}
         </div> */}
-        <div className="flex flex-wrap justify-center items-center gap-5 my-5">
+        <div className="flex flex-wrap justify-center items-center gap-5 my-5 py-20">
           {dryProducts && Array.from(dryProducts)?.map((item, idx) => (
             <>
               <div className="flex group cursor-pointer items-center justify-center w-[250px] h-[250px] p-3 hover:scale-105 transition-all duration-500 ease-in-out hover:grayscale-50 relative" onClick={() => { setOpen(true); setSingleData(item) }} key={idx}>
