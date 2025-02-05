@@ -44,9 +44,9 @@ const Footer = () => {
               <li>
                 <CustomLink to="/news">{t("footer.news")}</CustomLink>
               </li>
-              <li>
+              {/* <li>
                 <CustomLink to="/production">{t("footer.products")}</CustomLink>
-              </li>
+              </li> */}
               <li>
                 <CustomLink to="/contact">{t("footer.contacts")}</CustomLink>
               </li>
