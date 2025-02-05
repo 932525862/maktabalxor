@@ -69,13 +69,13 @@ export default function ProductDrawer({ open, onClose, data }: ProductDrawerProp
             __html: data?.[`name${language}` as keyof DataProps] || ""
           }} />
 
-          <p className="text-gray-700"
+          <p className="text-gray-700 text-[18px]"
             dangerouslySetInnerHTML={{
               __html: data?.[`description${language}` as keyof DataProps] || ""
             }}
           />
           <div className="flex items-center justify-center text-white h-16">
-            <button className="bg-green-600 text-white font-bold px-6 py-3 rounded-lg transition-transform ease-in-out hover:scale-105 duration-500 hover:bg-white hover:text-green-600 hover:border-2 w-full hover:border-green-600">
+            <button className="bg-[#7f103a] text-white font-bold px-6 py-3 rounded-lg transition-transform ease-in-out hover:scale-105 duration-500 hover:bg-white hover:text-[#7f103a] hover:border-2 w-full hover:border-[#7f103a]">
               {t("products.btn")}
             </button>
           </div>
