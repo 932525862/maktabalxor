@@ -26,6 +26,7 @@
     "titleP": "Our Products",
     "titleP1": "Fresh Fruits",
     "titleP2": "Dried Fruits",
+    "titleP3": "Nuts",
     "titleL": "MILMAX LOGISTICS",
     "titleL1": "Milmax company can supply its products to the countries shown on this map.",
     "titleL2": "We deliver products to these countries by air, sea, and road transport.",
@@ -66,8 +67,9 @@
   },
   "products": {
     "dry": "Dried Products",
-    "wet": "Fresh Products", 
-    "btn" : "Submit Application"
+    "wet": "Fresh Products",
+    "nuts": "Nuts",
+    "btn": "Submit Application"
   },
 
   "footer": {
@@ -84,6 +86,7 @@
     "phone2": "+998 99-754-77-33",
     "email": "sales@milmax.uz",
     "dry_product": "Dry product",
-    "frozen_product": "Frozen fruit"
+    "frozen_product": "Frozen fruit",
+    "nuts": "Nuts"
   }
 }

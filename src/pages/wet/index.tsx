@@ -1,4 +1,4 @@
-import bg from "../../assets/production/bg.jpg"
+// import bg from "../../assets/production/bg.jpg"
 import { useEffect, useState } from "react"
 import ProductDrawer from "../../components/drawer"
 import { useLanguage } from "../../context/locales";
@@ -8,7 +8,7 @@ import Skeleton from "react-loading-skeleton";
 const WetFruits = () => {
   const [open, setOpen] = useState<boolean>(false);
 
-  type ProdTypes = "wet" | "dry";
+  type ProdTypes = "wet" | "dry" | "nuts";
 
   interface WetProducts {
     nameUz: string;
@@ -66,7 +66,9 @@ const WetFruits = () => {
   return (
     <>
       <div className="container max-w-7xl h-full w-full mx-auto flex flex-col justify-between">
-        <div className="uppercase flex text-center justify-center items-center h-[130px] text-2xl md:text-4xl rounded-3xl mt-5 text-white font-bold bg-[url('/assets/bg.jpg')]" style={{ backgroundImage: `url(${bg})` }}>{t("products.wet")}</div>
+        <div className="uppercase flex text-center justify-center items-center h-[130px] text-2xl md:text-4xl rounded-3xl mt-5  font-bold bg-[url('/assets/bg.jpg')]"
+        // style={{ backgroundImage: `url(${bg})` }}
+        >{t("products.wet")}</div>
         <div className="flex flex-wrap justify-center items-center gap-5 my-5 py-20">
           {wetProducts ? Array.from(wetProducts)?.map((item, idx) => (
             <>

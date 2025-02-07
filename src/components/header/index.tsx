@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "../navbar";
-import logo from "../../assets/logo/SVG.svg";
+// import logo from "../../assets/logo/SVG.svg";
+import logo from "../../assets/logo/logo.png";
 import { Select } from "antd";
 import { AlignRightOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
@@ -34,7 +35,7 @@ const Header = () => {
   }, []);
 
   const handleChange = (value: string) => {
-    changeLanguage(value);  
+    changeLanguage(value);
     i18n.changeLanguage(value);
   };
 

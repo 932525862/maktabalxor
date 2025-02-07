@@ -8,7 +8,9 @@ const HomePage = lazy(() => import("../pages/home/index.tsx"));
 const WetFruits = lazy(() => import("../pages/wet/index.tsx"));
 const DryFruits = lazy(() => import("../pages/dry/index.tsx"));
 const NewsSinglePage = lazy(() => import("../pages/news/newsOne.tsx"));
+const NutsPage = lazy(() => import("../pages/nuts/index.tsx"));
+const ProductsPage = lazy(() => import("../pages/products/index.tsx"));
 
 export {
-    Layout, AboutPage, ContactPage, NewsPage, HomePage, WetFruits, DryFruits, NewsSinglePage
+    Layout, AboutPage, ContactPage, NewsPage, HomePage, WetFruits, DryFruits, ProductsPage, NewsSinglePage, NutsPage
 };

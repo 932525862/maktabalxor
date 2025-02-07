@@ -58,7 +58,7 @@ export default function NewsOnePage() {
     return (
         <div className="max-w-7xl mx-auto container h-full !mt-[100px]">
             <h1 className="text-2xl md:text-4xl font-bold my-10 text-center">{newsOne && newsOne[`title${language}` as keyof NewsOne]}</h1>
-            <div className="mt-0 max-h-full h-full flex flex-col justify-center items-center">
+            <div className="mt-0 mb-14 max-h-full h-full flex flex-col justify-center items-center">
 
                 {/* <!-- Image Content --> */}
                 <div className="flex justify-center items-center w-full h-full lg:h-[500px] lg:relative my-5">

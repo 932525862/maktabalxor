@@ -5,7 +5,7 @@ import { useLanguage } from "../../context/locales";
 import { useTranslation } from "react-i18next";
 
 
-type ProdTypes = "wet" | "dry";
+type ProdTypes = "wet" | "dry" | "nuts";
 
 interface DataProps {
   nameRu: string;
