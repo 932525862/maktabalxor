@@ -13,28 +13,11 @@ const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
 
 // Maxsus davlatlar ro'yxati
 const specialCountries = [
-  "Russia",
-  "Kazakhstan",
-  "Kyrgyzstan",
-  "Tajikistan",
-  "Belarus",
-  "Ukraine",
-  "Azerbaijan",
-  "Moldova",
-  "Turkmenistan",
-  "China",
-  "South Korea",
-  "India",
-  "Turkey",
-  "Afghanistan",
-  "Pakistan",
-  "United Arab Emirates",
-  "Germany",
-  "Poland",
-  "Latvia",
-  "Lithuania",
-  "Czech Republic",
-  "Italy",
+  "Russia", "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Belarus",
+  "Ukraine", "Azerbaijan", "Moldova", "Turkmenistan", "China",
+  "South Korea", "India", "Turkey", "Afghanistan", "Pakistan",
+  "United Arab Emirates", "Germany", "Poland", "Latvia", "Lithuania",
+  "Czech Republic", "Italy"
 ];
 
 // O'zbekiston
@@ -93,41 +76,41 @@ const WorldMap: React.FC = () => {
         className="text-base md:text-xl font-bold text-gray-700 text-center mb-4"
       >
         <p className="text-lg font-sans text-gray-700 leading-relaxed">
-        {t("about.titleL1")}
+          {t("about.titleL1")}
         </p>
       </motion.h2>
-      <ComposableMap projectionConfig={{ scale: 150 }} className="mx-auto">
+      <ComposableMap projectionConfig={{ scale: 0 }} className="mx-auto">
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
-            geographies.map((geo: GeographyItem) => {
-              const isUzbekistan = geo.properties.name === Uzbekistan;
-              const isSpecialCountry = specialCountries.includes(
-                geo.properties.name
-              );
-              return (
-                <Geography
-                  //@ts-ignore
-                  key={geo.rsmKey}
-                  geography={geo}
-                  onMouseEnter={() => handleHover(geo)}
-                  onMouseLeave={handleLeave}
-                  onClick={() => handleClick(geo)}
-                  style={{
-                    default: {
-                      fill: isUzbekistan
-                        ? "#d58044" // O‘zbekiston
-                        : isSpecialCountry
-                        ? "#7f103a" // Ro‘yxatdagi davlatlar
-                        : "#D6D6DA",
-                      outline: "none",
-                      cursor: isSpecialCountry ? "pointer" : "default",
-                    },
-                    hover: { fill: "#F53", outline: "none" },
-                    pressed: { fill: "#E42", outline: "none" },
-                  }}
-                />
-              );
-            })
+            geographies
+              .filter((geo: GeographyItem) => geo.properties.name !== "Antarctica") // Faqat Janubiy muzlikni olib tashlash
+              .map((geo: GeographyItem) => {
+                const isUzbekistan = geo.properties.name === Uzbekistan;
+                const isSpecialCountry = specialCountries.includes(geo.properties.name);
+                return (
+                  <Geography
+                    //@ts-ignore
+                    key={geo.rsmKey}
+                    geography={geo}
+                    onMouseEnter={() => handleHover(geo)}
+                    onMouseLeave={handleLeave}
+                    onClick={() => handleClick(geo)}
+                    style={{
+                      default: {
+                        fill: isUzbekistan
+                          ? "#d58044" // O‘zbekiston
+                          : isSpecialCountry
+                          ? "#7f103a" // Ro‘yxatdagi davlatlar
+                          : "#D6D6DA",
+                        outline: "none",
+                        cursor: isSpecialCountry ? "pointer" : "default",
+                      },
+                      hover: { fill: "#F53", outline: "none" },
+                      pressed: { fill: "#E42", outline: "none" },
+                    }}
+                  />
+                );
+              })
           }
         </Geographies>
       </ComposableMap>
@@ -141,48 +124,6 @@ const WorldMap: React.FC = () => {
           Hovered Country: <span className="font-bold">{hoveredCountry}</span>
         </motion.p>
       )}
-
-      {/* Modal */}
-      <Dialog
-        open={modalOpen}
-        onClose={() => setModalOpen(false)}
-        className="fixed inset-0 flex items-center justify-center z-50 bg-transparent"
-      >
-        <div className="bg-white rounded-lg shadow-lg p-6 max-w-2xl w-full relative">
-          <p className="text-xl font-bold mb-4 text-center text-lg font-sans text-gray-700 leading-relaxed">
-          {t("about.titleL2")}
-          </p>
-          <div className="max-h-64 overflow-y-auto border border-gray-300 rounded-md">
-            <table className="table-auto w-full border-collapse border border-gray-300">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="border border-gray-300 px-4 py-2">No</th>
-                  <th className="border border-gray-300 px-4 py-2">{t("about.titleLD")}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {specialCountries.map((country, index) => (
-                  <tr
-                    key={index}
-                    className="hover:bg-gray-50 transition duration-200"
-                  >
-                    <td className="border border-gray-300 px-4 py-2 text-center">
-                      {index + 1}
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">{country}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <button
-            onClick={() => setModalOpen(false)}
-            className="mt-4 bg-[#7f103a] text-white px-8 py-2 rounded-md hover:bg-[#b46738] transition mx-auto block"
-          >
-            {t("about.titleLB")}
-          </button>
-        </div>
-      </Dialog>
     </div>
   );
 };
