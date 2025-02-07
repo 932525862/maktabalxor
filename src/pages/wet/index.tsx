@@ -40,6 +40,8 @@ const WetFruits = () => {
 
       const data: { data: WetProducts[] } = await response.json();
       setWetProducts(Array.from(data?.data)?.filter((item) => item?.type === "wet"));
+      // console.log(data?.data, "Data from products new");
+
     }
     catch (err) {
       console.error(err);

@@ -20,7 +20,7 @@ const Nuts = () => {
 
     type ProdTypes = "wet" | "dry" | "nuts";
 
-    interface DryProducts {
+    interface Nuts {
         nameUz: string;
         nameRu: string;
         nameEn: string;
@@ -34,8 +34,8 @@ const Nuts = () => {
         [key: string]: string;
     }
 
-    const [dryProducts, setDryProducts] = useState<DryProducts[] | []>([]);
-    const [singleData, setSingleData] = useState<DryProducts>();
+    const [nuts, setNuts] = useState<Nuts[] | []>([]);
+    const [singleData, setSingleData] = useState<Nuts>();
     const { t } = useTranslation();
     let { language } = useLanguage();
     language = language.split("")[0].toUpperCase() + language.split("").slice(1).join("");
@@ -48,8 +48,8 @@ const Nuts = () => {
                 }
             });
 
-            const data: { data: DryProducts[] } = await response.json();
-            setDryProducts(Array.from(data?.data)?.filter((item) => item?.type === "dry"));
+            const data: { data: Nuts[] } = await response.json();
+            setNuts(Array.from(data?.data)?.filter((item) => item?.type === "nuts"));
         }
         catch (err) {
             console.error(err);
@@ -67,7 +67,7 @@ const Nuts = () => {
                 // style={{ backgroundImage: `url(${bg})` }}
                 >{t("products.nuts")}</div>
                 <div className="flex flex-wrap justify-center items-center gap-5 my-5 py-20">
-                    {dryProducts && Array.from(dryProducts)?.map((item, idx) => (
+                    {nuts && Array.from(nuts)?.map((item, idx) => (
                         <>
                             <div className="flex group cursor-pointer items-center justify-center w-[250px] h-[250px] p-3 hover:scale-105 transition-all duration-500 ease-in-out hover:grayscale-50 relative" onClick={() => { setOpen(true); setSingleData(item) }} key={idx}>
                                 <img src={item?.imageUrl} alt="Dry Product Image" className="rounded-tr-4xl rounded-bl-3xl rounded-bt-2xl rounded-tl-xl rounded-br-[50px] mix-blend-multiply object-cover h-full w-full" />
