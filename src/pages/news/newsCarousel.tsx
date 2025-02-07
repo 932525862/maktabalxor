@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
@@ -31,6 +31,7 @@ const NewsCarousel: React.FC = () => {
         descriptionAr: string;
         imageUrl: string;
         id: number;
+        createdAt?: string;
     }[] | []>();
 
     const getNews = async () => {
@@ -60,7 +61,6 @@ const NewsCarousel: React.FC = () => {
     let { language } = useLanguage();
     language = language.split("")[0].toUpperCase() + language.split("").slice(1).join("");
 
-
     useEffect(() => {
         getNews();
     }, [])
@@ -77,7 +77,7 @@ const NewsCarousel: React.FC = () => {
             slidesPerView={3}
             spaceBetween={60}
             centeredSlides={true}
-            autoplay={{ delay: 2000 }}
+            autoplay={{ delay: 2500 }}
             key={news?.length || "default"}
             loop={true}
             modules={[Autoplay]}
@@ -104,7 +104,7 @@ const NewsCarousel: React.FC = () => {
             {news && Array.from(news)?.map((item, index) => (
                 <SwiperSlide
                     key={index}
-                    className="h-full !w-full md:!w-[400px] flex justify-center items-center"
+                    className="h-full !w-full md:!w-[420px] flex justify-center items-center"
                 >
                     <div
                         className="flex flex-col items-center justify-center h-full w-full font-bold relative group cursor-pointer"
@@ -113,10 +113,11 @@ const NewsCarousel: React.FC = () => {
                             scrollTo({ top: 0, behavior: "smooth" });
                         }}
                     >
+                        <p className="absolute z-30 top-5 group-hover:top-2 animation-all duration-300 left-5 text-white block">{item?.createdAt?.slice(0, 10)}</p>
                         <img
                             src={item?.imageUrl}
                             alt="Carousel Image"
-                            className="w-full h-full object-cover rounded-2xl hover:rounded-4xl transition-all duration-500"
+                            className="w-full h-full object-cover grayscale-50 brightness-90 group-hover:blur-sm  transition-all duration-1000"
                         />
                         <span
                             className="font-bold text-xl text-white absolute bottom-5 opacity-100 group-hover:opacity-0 group-hover:invisible visible transition-all truncate-2 text-center duration-300"
@@ -124,10 +125,22 @@ const NewsCarousel: React.FC = () => {
                                 __html: item?.[`title${language}` as keyof typeof item] || "",
                             }}
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#7f103a] via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex flex-col justify-end p-4 items-center">
+                            <p className="text-white font-medium text-center transition-all duration-300 transform translate-y-8 group-hover:translate-y-0">
+                                <span
+                                    className="font-bold text-xl truncate-2 text-center"
+                                    dangerouslySetInnerHTML={{
+                                        __html: item?.[`title${language}` as keyof typeof item] || "",
+                                    }}
+                                />
+                            </p>
+                            <Link to={`/news/${item?.id}`} className="text-white font-semibold mt-2 text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                                {t("news.btn")} <ArrowRightOutlined />
+                            </Link>
+                        </div>
 
-                        <span className="absolute top-[50%] text-[#7f103a] text-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 flex items-center justify-center gap-3">
-                            {t("news.btn")} <ArrowRightOutlined />
-                        </span>
+                        {/* <span className="absoulte top-0 left-5 text-white">17-12-2005</span> */}
+
                     </div>
                 </SwiperSlide>
             ))}
