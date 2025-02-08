@@ -26,6 +26,7 @@
     "titleP": "Bizning mahsulotimiz",
     "titleP1": "Yangi mevalar",
     "titleP2": "Quritilgan mevalar",
+    "titleP3": "Yong'oqlar",
     "titleL": "MILMAX LOGISTIKASI",
     "titleL1": "Milmax kompaniyasi ushbu xaritada ko‘rsatilgan davlatlarga o‘z mahsulotlarini yetkazib bera oladi.",
     "titleL2": "Ushbu ro‘yxatdagi davlatlarga havo, dengiz va avtomobil yo‘llari orqali mahsulotlarni yetkazib beramiz.",
@@ -67,7 +68,8 @@
   "products": {
     "dry": "Quritilgan mevalar",
     "wet": "Ho'l mevalar",
-    "btn" : "Ariza Qoldirish"
+    "nuts": "Yong'oqlar",
+    "btn": "Ariza Qoldirish"
   },
   "footer": {
     "footer1": "Biz ijtimoiy tarmoqlarda mavjudmiz:",
@@ -83,6 +85,7 @@
     "phone2": "+998 99-754-77-33",
     "email": "sales@milmax.uz",
     "dry_product": "Quruq mahsulot",
-    "frozen_product": "Ho'l mevalar"
+    "frozen_product": "Ho'l mevalar",
+    "nuts": "Yong'oqlar"
   }
 }

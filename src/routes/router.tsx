@@ -8,6 +8,8 @@ import {
   WetFruits,
   DryFruits,
   NewsSinglePage,
+  NutsPage,
+  ProductsPage
 } from "./import-url";
 import { Suspense } from "react";
 import Loading from "../loading";
@@ -64,6 +66,14 @@ const Router = [
         ),
       },
       {
+        path: "/production",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <ProductsPage />
+          </Suspense>
+        ),
+      },
+      {
         path: "/production/wet",
         element: (
           <Suspense fallback={<Loading />}>
@@ -79,6 +89,14 @@ const Router = [
           </Suspense>
         ),
       },
+      {
+        path: "/production/nuts",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <NutsPage />
+          </Suspense>
+        ),
+      }
     ],
   },
 ];

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import CustomLink from "../custom-link";
-import logo from "../../assets/logo/SVG.svg";
+// import logo from "../../assets/logo/SVG.svg";
+import logo from "../../assets/logo/logo.png";
 import { CiLocationOn } from "react-icons/ci";
 import { SlPhone } from "react-icons/sl";
 import { IoMailOutline } from "react-icons/io5";
@@ -21,11 +22,11 @@ const Footer = () => {
             <div className="flex flex-col gap-8">
               <div className="flex flex-col items-center">
                 <h5 className="font-medium text-[18px] mb-3 text-center">
-                 {t("home.homeB")}
+                  {t("home.homeB")}
                 </h5>
-               
+
               </div>
-              
+
             </div>
           </div>
 
@@ -44,9 +45,9 @@ const Footer = () => {
               <li>
                 <CustomLink to="/news">{t("footer.news")}</CustomLink>
               </li>
-              {/* <li>
+              <li>
                 <CustomLink to="/production">{t("footer.products")}</CustomLink>
-              </li> */}
+              </li>
               <li>
                 <CustomLink to="/contact">{t("footer.contacts")}</CustomLink>
               </li>
@@ -67,6 +68,11 @@ const Footer = () => {
               <li>
                 <CustomLink to="/production/wet">
                   {t("footer.frozen_product")}
+                </CustomLink>
+              </li>
+              <li>
+                <CustomLink to="/production/nuts">
+                  {t("footer.nuts")}
                 </CustomLink>
               </li>
             </ul>

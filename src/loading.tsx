@@ -1,4 +1,5 @@
-import loadingImg from "./assets/logo/SVG.svg";
+// import loadingImg from "./assets/logo/SVG.svg";
+import loadingImg from "./assets/logo/logo.png";
 
 const Loading = () => {
   return (
