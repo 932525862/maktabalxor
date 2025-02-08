@@ -100,7 +100,7 @@ const Footer = () => {
                   <span>
                     <SlPhone />
                   </span>
-                  998 93-472-95-00
+                  +998 93-472-95-00
                 </Link>
               </li>
               <li>

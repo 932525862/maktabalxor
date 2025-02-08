@@ -66,9 +66,9 @@ const Header = () => {
               style={{ width: 60 }}
               onChange={handleChange}
               options={[
-                { value: "ru", label: "Ru" },
                 { value: "en", label: "En" },
                 { value: "uz", label: "Uz" },
+                { value: "ru", label: "Ru" },
                 { value: "ar", label: "Ar" },
               ]}
             />

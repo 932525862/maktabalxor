@@ -95,14 +95,14 @@ const WorldMap: React.FC = () => {
                     style={{
                       default: {
                         fill: isUzbekistan
-                          ? "#d58044" // O‘zbekiston
+                          ? "#f53" // O‘zbekiston
                           : isSpecialCountry
                           ? "#7f103a" // Ro‘yxatdagi davlatlar
-                          : "#D6D6DA",
+                          : "#7f103a",
                         outline: "none",
                         cursor: isSpecialCountry ? "pointer" : "default",
                       },
-                      hover: { fill: "#F53", outline: "none" },
+                      hover: { fill: "#D6D6DA", outline: "none" },
                       pressed: { fill: "#E42", outline: "none" },
                     }}
                   />

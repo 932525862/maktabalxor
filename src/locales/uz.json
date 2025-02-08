@@ -18,7 +18,7 @@
     "titleQ1p": "O'zbekistonda qishloq xo'jaligi miloddan avvalgi 3000-yillarga borib taqaladi, bu davrda dastlabki ekin ekish va sug'orish amaliyotlari rivojlangan. Ayniqsa, qanat tizimlari va murakkab suvni boshqarish tizimlari orqali o'simliklarni sug'orish, mintaqadagi qishloq xo'jaligining asosiy usullaridan bo'lib, iqtisodiy taraqqiyotga katta hissa qo'shgan. Bu amaliyotlar nafaqat o'zbek yerlarida, balki butun Markaziy Osiyoda qishloq xo'jaligining rivojlanishiga turtki bo'lib, ajralib turadigan madaniyat va texnologik yutuqlarni shakllantirgan.",
     "titleQ2": "MIDDLE AGES",
     "titleQ2p": "Islomiy qishloq xo'jaligi yangiliklari joriy etilgan, shu jumladan ilg'or sug'orish texnikalari, ekinlarni yetishtirishda samaradorlikni oshiradigan yangi metodlar va o'zgartirilgan sug'orish tizimlari. Bu davr, shuningdek, Samaniylar va Temuriylar kabi turli imperiyalar ostida qishloq xo'jaligi fanining va amaliyotining rivojlanishini ko'rgan, ilm-fan sohasidagi yangiliklar va qishloq xo'jaligi texnologiyalarining o'zaro aloqasi orqali yangi agrar tizimlarning shakllanishiga sabab bo'lgan.",
-    "titleR": "MILMAX RAQAMLARDA",
+    "titleR": "Milmax Raqamlarda",
     "titleR1": "QAYTA ISHLASH MAJMUASI",
     "titleR2": "ISSIQXONA KOMPLEKSLARI",
     "titleR3": "QISHLOQ XO‘JALIK YERLARI",
@@ -27,7 +27,7 @@
     "titleP1": "Yangi mevalar",
     "titleP2": "Quritilgan mevalar",
     "titleP3": "Yong'oqlar",
-    "titleL": "MILMAX LOGISTIKASI",
+    "titleL": "Milmax Logistikasi ",
     "titleL1": "Milmax kompaniyasi ushbu xaritada ko‘rsatilgan davlatlarga o‘z mahsulotlarini yetkazib bera oladi.",
     "titleL2": "Ushbu ro‘yxatdagi davlatlarga havo, dengiz va avtomobil yo‘llari orqali mahsulotlarni yetkazib beramiz.",
     "titleLB": "Yopish",
@@ -86,6 +86,8 @@
     "email": "sales@milmax.uz",
     "dry_product": "Quruq mahsulot",
     "frozen_product": "Ho'l mevalar",
-    "nuts": "Yong'oqlar"
+    "nuts": "Yong'oqlar",
+    "manzil":"Manzil",
+    "tel":"Telefonlar"
   }
 }
