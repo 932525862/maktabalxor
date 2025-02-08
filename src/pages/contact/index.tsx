@@ -54,7 +54,7 @@ const ContactPage = () => {
         {/* Contact Information - Full Width */}
         <div className="bg-white p-6 rounded-3xl shadow-lg mt-10 text-gray-800 flex flex-col lg:flex-row justify-between items-center text-center lg:text-left">
           <div className="flex items-center gap-4">
-            <FaMapMarkerAlt className="text-blue-600 text-3xl" />
+            <FaMapMarkerAlt className="text-[#7f103a] text-3xl" />
             <div>
               <h3 className="text-xl font-semibold">{t("footer.manzil")}</h3>
               <p className="text-lg">{t("footer.address")}</p>
@@ -62,7 +62,7 @@ const ContactPage = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <FaPhoneAlt className="text-green-600 text-3xl" />
+            <FaPhoneAlt className="text-[#7f103a] text-3xl" />
             <div>
               <h3 className="text-xl font-semibold">{t("footer.tel")}</h3>
               <p className="text-lg">
@@ -77,7 +77,7 @@ const ContactPage = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <FaEnvelope className="text-red-600 text-3xl" />
+            <FaEnvelope className="text-[#7f103a] text-3xl" />
             <div>
               <h3 className="text-xl font-semibold">Email</h3>
               <p className="text-lg">
@@ -94,4 +94,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-
