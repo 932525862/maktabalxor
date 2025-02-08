@@ -18,7 +18,7 @@
     "titleQ1p": "Agriculture in Uzbekistan dates back to 3000 BC when the first farming and irrigation practices developed. In particular, the use of qanat systems and complex water management techniques for irrigation became a fundamental aspect of the region’s agriculture, significantly contributing to economic development. These practices not only influenced Uzbek lands but also played a crucial role in advancing agriculture throughout Central Asia, shaping a distinctive culture and technological advancements.",
     "titleQ2": "MIDDLE AGES",
     "titleQ2p": "During this period, Islamic agricultural innovations were introduced, including advanced irrigation techniques, new methods that increased crop cultivation efficiency, and improved irrigation systems. This era also witnessed the development of agricultural science and practices under various empires, such as the Samanids and the Timurids, leading to the formation of new agrarian systems based on scientific discoveries and technological exchanges.",
-    "titleR": "MILMAX IN NUMBERS",
+    "titleR": "Milmax in numbers",
     "titleR1": "PROCESSING COMPLEX",
     "titleR2": "GREENHOUSE COMPLEXES",
     "titleR3": "AGRICULTURAL LANDS",
@@ -87,6 +87,9 @@
     "email": "sales@milmax.uz",
     "dry_product": "Dry product",
     "frozen_product": "Frozen fruit",
-    "nuts": "Nuts"
+    "nuts": "Nuts",
+      "manzil": "Address",
+      "tel": "Phones"
+
   }
 }
