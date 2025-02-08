@@ -4,7 +4,6 @@ import {
   Geographies,
   Geography
 } from "react-simple-maps";
-import { Dialog } from "@headlessui/react"; // Modal uchun
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -35,7 +34,6 @@ interface GeographyItem {
 const WorldMap: React.FC = () => {
   const { t } = useTranslation();
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
-  const [modalOpen, setModalOpen] = useState<boolean>(false);
 
   // Hover holatini o'zgartirish
   const handleHover = (geo: GeographyItem) => {
@@ -54,7 +52,6 @@ const WorldMap: React.FC = () => {
       specialCountries.includes(geo.properties.name)
     ) {
       setHoveredCountry(geo.properties.name);
-      setModalOpen(true);
     }
   };
 
