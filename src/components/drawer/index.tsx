@@ -3,6 +3,7 @@ import { Drawer } from "antd";
 import { useState } from "react";
 import { useLanguage } from "../../context/locales";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 
 type ProdTypes = "wet" | "dry" | "nuts";
@@ -30,6 +31,8 @@ export default function ProductDrawer({ open, onClose, data }: ProductDrawerProp
   console.log(data, "Data from drawer");
 
   const { t } = useTranslation();
+
+  const navigate = useNavigate();
 
   let { language } = useLanguage();
   language = language.split("")[0].toUpperCase() + language.split("").slice(1).join("");
@@ -75,7 +78,7 @@ export default function ProductDrawer({ open, onClose, data }: ProductDrawerProp
             }}
           />
           <div className="flex items-center justify-center text-white h-16">
-            <button className="bg-[#7f103a] text-white font-bold px-6 py-3 rounded-lg transition-transform ease-in-out hover:scale-105 duration-500 hover:bg-white hover:text-[#7f103a] hover:border-2 w-full hover:border-[#7f103a]">
+            <button className="bg-[#7f103a] text-white font-bold px-6 py-3 rounded-lg transition-transform ease-in-out hover:scale-105 duration-500 hover:bg-white hover:text-[#7f103a] cursor-pointer hover:border-2 w-full hover:border-[#7f103a]" onClick={() => navigate("/contact")}>
               {t("products.btn")}
             </button>
           </div>
