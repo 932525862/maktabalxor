@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import Navbar from "../navbar";
-// import logo from "../../assets/logo/SVG.svg";
 import logo from "../../assets/logo/logo.png";
 import { Select } from "antd";
 import { AlignRightOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "../../context/locales";
+import uzImg from "../../assets/flags/uz.png";
+import ruImg from "../../assets/flags/ru.png";
+import enImg from "../../assets/flags/en.png";
+import arImg from "../../assets/flags/sa.png";
 
 const Header = () => {
 
@@ -70,7 +73,7 @@ const Header = () => {
                   value: "en",
                   label: (
                     <span className="flex items-center justify-center">
-                      <img src="https://flagcdn.com/w40/gb.png" alt="English" width="25px" style={{ marginRight: 8 }} />
+                      <img src={enImg} alt="English" width="25px" style={{ marginRight: 8 }} />
                       En
                     </span>
                   ),
@@ -79,7 +82,7 @@ const Header = () => {
                   value: "uz",
                   label: (
                     <span className="flex items-center justify-center">
-                      <img src="https://flagcdn.com/w40/uz.png" alt="Uzbek" width="25px" style={{ marginRight: 8 }} />
+                      <img src={uzImg} alt="Uzbek" width="25px" style={{ marginRight: 8 }} />
                       Uz
                     </span>
                   ),
@@ -88,7 +91,7 @@ const Header = () => {
                   value: "ru",
                   label: (
                     <span className="flex items-center justify-center">
-                      <img src="https://flagcdn.com/w40/ru.png" alt="Russian" width="25px" style={{ marginRight: 8 }} />
+                      <img src={ruImg} alt="Russian" width="25px" style={{ marginRight: 8 }} />
                       Ru
                     </span>
                   ),
@@ -97,7 +100,7 @@ const Header = () => {
                   value: "ar",
                   label: (
                     <span className="flex items-center justify-center">
-                      <img src="https://flagcdn.com/w40/sa.png" alt="Arabic" width="25px" style={{ marginRight: 8 }} />
+                      <img src={arImg} alt="Arabic" width="25px" style={{ marginRight: 8 }} />
                       Ar
                     </span>
                   ),
