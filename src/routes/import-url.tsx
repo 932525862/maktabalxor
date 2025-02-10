@@ -10,7 +10,10 @@ const DryFruits = lazy(() => import("../pages/dry/index.tsx"));
 const NewsSinglePage = lazy(() => import("../pages/news/newsOne.tsx"));
 const NutsPage = lazy(() => import("../pages/nuts/index.tsx"));
 const ProductsPage = lazy(() => import("../pages/products/index.tsx"));
+const Dehydrated = lazy(() => import("../pages/dehydrated/index.tsx"));
+const Frozen = lazy(() => import("../pages/frozen/index.tsx"));
+const Frozend = lazy(() => import("../pages/frozend/index.tsx"));
 
 export {
-    Layout, AboutPage, ContactPage, NewsPage, HomePage, WetFruits, DryFruits, ProductsPage, NewsSinglePage, NutsPage
+    Layout, AboutPage, ContactPage, NewsPage, HomePage, WetFruits, DryFruits, ProductsPage, NewsSinglePage, NutsPage ,Dehydrated ,Frozen,Frozend
 };
