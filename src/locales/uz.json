@@ -27,13 +27,18 @@
     "titleP1": "Yangi mevalar",
     "titleP2": "Quritilgan mevalar",
     "titleP3": "Yong'oqlar",
-    "titleP4d":"Quruq mevalar va sabzavotlar",
+    "titleP4": "Quritilgan mevalar va sabzavotlar",
+    "titleP5": "Muzlatilgan IQF meva va sabzavotlar",
+    "titleP6": "Muzlatilgan quritilgan mevalar va sabzavotlar",
+    "titleP4d": "Quruq mevalar va sabzavotlar",
     "titleL": "Milmax Logistikasi ",
     "titleL1": "Milmax kompaniyasi ushbu xaritada ko‘rsatilgan davlatlarga o‘z mahsulotlarini yetkazib bera oladi.",
     "titleL2": "Ushbu ro‘yxatdagi davlatlarga havo, dengiz va avtomobil yo‘llari orqali mahsulotlarni yetkazib beramiz.",
     "titleLB": "Yopish",
     "titleLD": "Davlatlar Nomi",
-    "titleM":"Mamlakat nomi"
+    "titleM": "Mamlakat nomi",
+    "warn": "Tez kunlarda",
+    "backBtn": "Ortga qaytish"
   },
 
   "home": {
@@ -72,8 +77,8 @@
     "wet": "Ho'l mevalar",
     "nuts": "Yong'oqlar",
     "btn": "Ariza Qoldirish",
-    "titelPrB":"Orqaga qaytish",
-    "cobi":"Tez orada"
+    "titelPrB": "Orqaga qaytish",
+    "cobi": "Tez orada"
   },
   "footer": {
     "footer1": "Biz ijtimoiy tarmoqlarda mavjudmiz:",
@@ -91,8 +96,8 @@
     "dry_product": "Quruq mahsulot",
     "frozen_product": "Ho'l mevalar",
     "nuts": "Yong'oqlar",
-    "manzil":"Manzil",
-    "tel":"Telefonlar",
-    "titelPr1":"Quritilgan mevalar va sabzavotlar"
+    "manzil": "Manzil",
+    "tel": "Telefonlar",
+    "titelPr1": "Quritilgan mevalar va sabzavotlar"
   }
 }

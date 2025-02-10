@@ -27,12 +27,17 @@
     "titleP1": "Fresh Fruits",
     "titleP2": "Dried Fruits",
     "titleP3": "Nuts",
+    "titleP4": "Dehydrated Fruits and Vegetables",
+    "titleP5": "Frozen IQF Fruits and Vegetables",
+    "titleP6": "Freeze-dried Fruits and Vegetables",
     "titleL": "Milmax Logistics",
     "titleL1": "Milmax company can supply its products to the countries shown on this map.",
     "titleL2": "We deliver products to these countries by air, sea, and road transport.",
     "titleLB": "Close",
     "titleLD": "Country Names",
-    "titleM":"Country Name"
+    "titleM": "Country Name",
+    "warn": "Coming soon",
+    "backBtn": "Go Back"
   },
 
   "home": {
@@ -89,8 +94,7 @@
     "dry_product": "Dry product",
     "frozen_product": "Frozen fruit",
     "nuts": "Nuts",
-      "manzil": "Address",
-      "tel": "Phones"
-
+    "manzil": "Address",
+    "tel": "Phones"
   }
 }
