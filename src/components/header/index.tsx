@@ -63,13 +63,45 @@ const Header = () => {
           <div className="flex items-center gap-x-5">
             <Select
               value={i18n.language}
-              style={{ width: 60 }}
+              style={{ width: 100 }}
               onChange={handleChange}
               options={[
-                { value: "en", label: "En" },
-                { value: "uz", label: "Uz" },
-                { value: "ru", label: "Ru" },
-                { value: "ar", label: "Ar" },
+                {
+                  value: "en",
+                  label: (
+                    <span className="flex items-center justify-center">
+                      <img src="https://flagcdn.com/w40/gb.png" alt="English" width="25px" style={{ marginRight: 8 }} />
+                      En
+                    </span>
+                  ),
+                },
+                {
+                  value: "uz",
+                  label: (
+                    <span className="flex items-center justify-center">
+                      <img src="https://flagcdn.com/w40/uz.png" alt="Uzbek" width="25px" style={{ marginRight: 8 }} />
+                      Uz
+                    </span>
+                  ),
+                },
+                {
+                  value: "ru",
+                  label: (
+                    <span className="flex items-center justify-center">
+                      <img src="https://flagcdn.com/w40/ru.png" alt="Russian" width="25px" style={{ marginRight: 8 }} />
+                      Ru
+                    </span>
+                  ),
+                },
+                {
+                  value: "ar",
+                  label: (
+                    <span className="flex items-center justify-center">
+                      <img src="https://flagcdn.com/w40/sa.png" alt="Arabic" width="25px" style={{ marginRight: 8 }} />
+                      Ar
+                    </span>
+                  ),
+                },
               ]}
             />
 
