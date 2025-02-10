@@ -9,7 +9,10 @@ import {
   DryFruits,
   NewsSinglePage,
   NutsPage,
-  ProductsPage
+  ProductsPage,
+  Dehydrated ,
+  Frozen,
+  Frozend
 } from "./import-url";
 import { Suspense } from "react";
 import Loading from "../loading";
@@ -86,6 +89,30 @@ const Router = [
         element: (
           <Suspense fallback={<Loading />}>
             <DryFruits />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/production/dehydrated",
+        element: (
+          <Suspense fallback={<Loading />}>
+            < Dehydrated/>
+          </Suspense>
+        ),
+      },
+      {
+        path: "/production/frozen",
+        element: (
+          <Suspense fallback={<Loading />}>
+            < Frozen/>
+          </Suspense>
+        ),
+      },
+      {
+        path: "/production/frozend",
+        element: (
+          <Suspense fallback={<Loading />}>
+            < Frozend/>
           </Suspense>
         ),
       },

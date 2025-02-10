@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import Fresh from "../../../assets/allimg/freshp.webp";
 import Dried from "../../../assets/allimg/quritlgan.webp";
 import Nuts from "../../../assets/production/nuts.jpg";
+import Dehydrated from "../../../assets/allimg/P2.jpg";
+import Frozen from "../../../assets/allimg/P3.jpg";
+import Frozend from "../../../assets/allimg/p4.webp";
 import { useTranslation } from "react-i18next";
 
 const OurProducts = () => {
@@ -13,7 +16,10 @@ const OurProducts = () => {
   const products = [
     { id: 1, name: t("about.titleP1"), image: Fresh, link: '/production/wet' },
     { id: 2, name: t("about.titleP2"), image: Dried, link: '/production/dry' },
-    { id: 3, name: t("about.titleP3"), image: Nuts, link: '/production/nuts' }
+    { id: 3, name: t("about.titleP3"), image: Nuts, link: '/production/nuts' },
+    { id: 4, name: t("about.titleP4"), image: Dehydrated, link: '/production/dehydrated' },
+    { id: 5, name: t("about.titleP5"), image: Frozen, link: '/production/frozen' },
+    { id: 6, name: t("about.titleP6"), image: Frozend, link: '/production/frozend' }
   ];
 
   return (

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { Dialog } from "@headlessui/react";
 import { motion } from "framer-motion";
-
+import { useTranslation } from "react-i18next";
 // Geo URL
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
 
@@ -68,6 +68,7 @@ const WorldMap: React.FC = () => {
     }
   };
 
+  const { t } = useTranslation();
   return (
     <div className="bg-white px-4 relative ">
       <motion.h1
@@ -77,7 +78,7 @@ const WorldMap: React.FC = () => {
         className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-center text-gray-800 mb-4"
         style={{ marginTop: "100px" }}
       >
-        MILMAX LOGISTIKASI
+        {t("about.titleL")}
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
@@ -86,13 +87,12 @@ const WorldMap: React.FC = () => {
         className="text-base md:text-xl font-bold text-gray-700 text-center mb-4"
       >
         <p className="text-lg font-sans text-gray-700 leading-relaxed">
-          Milmax kompaniyasi ushbu xaritada ko‘rsatilgan davlatlarga o‘z
-          mahsulotlarini yetkazib bera oladi.
+        {t("about.titleL1")}
         </p>
       </motion.h2>
       <ComposableMap
-        projectionConfig={{ scale: 0 }}
-        className="mx-auto max-w-4/5 -translate-y-6"
+        projectionConfig={{ scale: 220 }}
+        className="mx-auto max-w-4/5 -translate-y-6 "
         style={{ width: "100%", height: "600px", maxHeight: "90vh" }} // 📌 Balandlik cheklangan
       >
         <Geographies geography={geoUrl}>
@@ -116,14 +116,14 @@ const WorldMap: React.FC = () => {
                     style={{
                       default: {
                         fill: isUzbekistan
-                          ? "#d58044"
+                          ? "#F53"
                           : isSpecialCountry
                           ? "#7f103a"
-                          : "#D6D6DA",
+                          : "#7f103a",
                         outline: "none",
                         cursor: isSpecialCountry ? "pointer" : "default",
                       },
-                      hover: { fill: "#F53", outline: "none" },
+                      hover: { fill: "#D6D6DA", outline: "none" },
                       pressed: { fill: "#E42", outline: "none" },
                     }}
                   />
@@ -138,9 +138,9 @@ const WorldMap: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center text-gray-700 mt-4 absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30"
+          className="text-center text-gray-700 mt-1 absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30"
         >
-          Hovered Country: <span className="font-bold">{hoveredCountry}</span>
+          {t("about.titleL1")}: <span className="font-bold">{hoveredCountry}</span>
         </motion.p>
       )}
 
@@ -152,8 +152,7 @@ const WorldMap: React.FC = () => {
       >
         <div className="bg-white rounded-lg shadow-lg p-6 max-w-2xl w-full relative">
           <p className="text-xl font-bold mb-4 text-center font-sans text-gray-700 leading-relaxed">
-            Ushbu ro‘yxatdagi davlatlarga havo, dengiz va avtomobil yo‘llari
-            orqali mahsulotlarni yetkazib beramiz.
+          {t("about.titleL2")}
           </p>
           <div className="max-h-64 overflow-y-auto border border-gray-300 rounded-md">
             <table className="table-auto w-full border-collapse border border-gray-300">
@@ -161,7 +160,7 @@ const WorldMap: React.FC = () => {
                 <tr className="bg-gray-100">
                   <th className="border border-gray-300 px-4 py-2">No.f</th>
                   <th className="border border-gray-300 px-4 py-2">
-                    Country Name
+                  {t("about.titleLD")}
                   </th>
                 </tr>
               </thead>
@@ -186,7 +185,7 @@ const WorldMap: React.FC = () => {
             onClick={() => setModalOpen(false)}
             className="mt-4 bg-[#7f103a] text-white px-8 py-2 rounded-md hover:bg-[#b46738] transition mx-auto block"
           >
-            Close
+           {t("about.titleM")}
           </button>
         </div>
       </Dialog>

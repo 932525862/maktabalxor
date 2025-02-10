@@ -1,4 +1,4 @@
-import bgImage from "../../assets/allimg/011.jpg";
+// import bgImage from "../../assets/allimg/011.jpg";
 import ContactForm from "./ContactForm";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
@@ -17,15 +17,9 @@ const ContactPage = () => {
     <section className="pt-10 pb-20">
       <div className="container">
         {/* Header Image */}
-        <div className="w-full h-full p-5 lg:h-[300px] overflow-hidden rounded-3xl relative flex justify-center items-center lg:mb-20 mb-10">
-          <div className="absolute top-0 left-0 w-full h-full">
-            {loading ? (
-              <Skeleton.Image style={{ width: "100%", height: "100%" }} active />
-            ) : (
-              <img src={bgImage} alt="milmax image" className="object-cover w-full h-full" />
-            )}
-          </div>
-          <h2 className="relative z-10 text-white font-bold text-lg md:text-5xl">
+        <div className="w-full h-full p-5 lg:h-[200px] overflow-hidden rounded-3xl relative flex justify-center items-center lg:mb-20 mb-10">
+          
+          <h2 className="relative z-10 text-[#000000] font-bold text-lg md:text-5xl">
             {loading ? <Skeleton.Input active style={{ width: 200 }} /> : t("footer.contacts")}
           </h2>
         </div>
