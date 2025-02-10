@@ -11,8 +11,6 @@ const AboutPage = () => {
     <Statistics/>
     <OurProducts/>
     <WorldMap/>
-   
-   
   </div>;
 };
 

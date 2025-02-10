@@ -93,7 +93,7 @@ const WorldMap: React.FC = () => {
       <ComposableMap
         projectionConfig={{ scale: 0 }}
         className="mx-auto max-w-4/5 -translate-y-6"
-        style={{ width: "100%", height: "640px", maxHeight: "90vh" }} // 📌 Balandlik cheklangan
+        style={{ width: "100%", height: "600px", maxHeight: "90vh" }} // 📌 Balandlik cheklangan
       >
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
