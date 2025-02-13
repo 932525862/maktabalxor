@@ -40,11 +40,11 @@ export default function ProductDrawer({ open, onClose, data }: ProductDrawerProp
   const [imgBig, setImgBig] = useState<boolean>(false);
   return (
     <Drawer open={open} onClose={onClose} width={"100%"} closeIcon={<CloseOutlined className="text-xl text-black" color="black" />} bodyStyle={{ scrollbarWidth: "none" }}>
-      <div className="flex bg-white p-2 justify-between items-center">
+      <div className="flex flex-col lg:flex-row bg-white p-2 justify-between items-center">
         {/* Left Section - Image */}
-        <div className="w-1/2 flex flex-col items-center h-[83vh] justify-center">
+        <div className="lg:w-1/2 w-full flex flex-col items-center h-auto lg:h-[83vh] justify-center">
           {!imgBig ? (
-            <div className="relative w-[500px] h-[500px] cursor-zoom-in">
+            <div className="relative w-full md:w-[500px] h-auto md:h-[500px] cursor-zoom-in">
               <img
                 onClick={() => setImgBig(true)}
                 src={data?.imageUrl}
@@ -67,7 +67,7 @@ export default function ProductDrawer({ open, onClose, data }: ProductDrawerProp
         </div>
 
         {/* Right Section - Text Content */}
-        <div className="w-1/2 p-10 space-y-4">
+        <div className="lg:w-1/2 w-full p-2 lg:p-10 space-y-4 order-2">
           <h2 className="text-xl font-bold text-gray-900" dangerouslySetInnerHTML={{
             __html: data?.[`name${language}` as keyof DataProps] || ""
           }} />
