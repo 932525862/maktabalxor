@@ -7,8 +7,8 @@ import { useTranslation } from "react-i18next";
 const AgroQuality: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <div className="bg-white p-6 sm:p-8 md:p-12 lg:p-16 max-w-6xl mx-auto" id="products">
-      <h1 className="text-4xl sm:text-4xl md:text-3xl lg:text-4xl font-serif font-bold text-center text-gray-800 mb-16">
+    <div className="bg-white p-6 sm:p-8 md:p-12 lg:p-16 max-w-6xl mx-auto !overflow-x-hidden" id="products">
+      <h1 className="text-3xl md:text-3xl lg:text-4xl font-serif font-bold text-center text-gray-800 mb-16">
       {t("home.milmaxqt")}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">

@@ -70,7 +70,7 @@ const WorldMap: React.FC = () => {
 
   const { t } = useTranslation();
   return (
-    <div className="bg-white px-4 relative ">
+    <div className="bg-white px-0 lg:px-4 relative ">
       <motion.h1
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -91,8 +91,8 @@ const WorldMap: React.FC = () => {
         </p>
       </motion.h2>
       <ComposableMap
-        projectionConfig={{ scale: 220 }}
-        className="mx-auto max-w-4/5 -translate-y-6 "
+        projectionConfig={{ scale: 150 }}
+        className="w-full -translate-y-6 "
         style={{ width: "100%", height: "600px", maxHeight: "90vh" }} // 📌 Balandlik cheklangan
       >
         <Geographies geography={geoUrl}>
