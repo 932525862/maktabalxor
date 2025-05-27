@@ -48,3 +48,9 @@ export default tseslint.config({
   },
 })
 ```
+# alxorazm
+# alxorazm
+# alxorazm
+# maktabalxor
+# maktabalxor
+# maktabalxor
