@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import img from "../../assets/allimg/010.jpg"
 
 
 //Problem with installation
@@ -13,6 +14,15 @@ import { useEffect, useState } from "react";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { useLanguage } from "../../context/locales";
 import { useTranslation } from "react-i18next";
+
+const data = [
+    {
+        id: 1,
+        img,
+        createdAt: "09.09.2025",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt vel tempora quis in aliquam sint saepe sit sapiente id officia dolor libero adipisci, voluptatibus, esse voluptatem ut, reprehenderit illo aut accusamus eos? Tempore itaque in nulla unde similique alias minima?"
+    }
+]
 
 
 
