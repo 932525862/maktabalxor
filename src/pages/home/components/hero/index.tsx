@@ -42,7 +42,7 @@ const Hero = () => {
           </h1>
 
           {/* Counterlar */}
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-white font-semibold text-center">
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-3 gap-8 text-white font-semibold text-center">
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md">
               <h4 className="text-4xl lg:text-5xl text-yellow-400">
                 <CountUp end={1500} duration={3} separator="," />

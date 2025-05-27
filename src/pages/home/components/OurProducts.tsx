@@ -24,7 +24,7 @@ const OurProducts = () => {
       >
         {t("about.titleP")}
       </motion.h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 place-items-center">
+      <div className="flex gap-5 flex-col md:flex-row">
         {products?.map((product, index) => (
           <motion.div
             key={product.id}

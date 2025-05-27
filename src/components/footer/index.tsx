@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import CustomLink from "../custom-link";
-// import logo from "../../assets/logo/SVG.svg";
 import logo from "../../assets/logo/logo.png";
 import { CiLocationOn } from "react-icons/ci";
 import { SlPhone } from "react-icons/sl";
@@ -22,7 +21,7 @@ const Footer = () => {
             <div className="flex flex-col gap-8">
               <div className="flex flex-col items-center">
                 <h5 className="font-medium text-[18px] mb-3 text-center">
-                  {t("home.homeB")}
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia saepe voluptas
                 </h5>
 
               </div>
@@ -57,22 +56,17 @@ const Footer = () => {
           {/* Mahsulotlar */}
           <div className="flex flex-col items-center">
             <h4 className="text-[18px] font-medium text-black mb-4 text-center">
-              {t("footer.products")}
+              Filiallar
             </h4>
             <ul className="flex flex-col items-center gap-3 text-[16px]">
               <li>
-                <CustomLink to="/production/dry">
-                  {t("footer.dry_product")}
+                <CustomLink to="/branches/oltiariq">
+                  Oltiariq filiali
                 </CustomLink>
               </li>
               <li>
-                <CustomLink to="/production/wet">
-                  {t("footer.frozen_product")}
-                </CustomLink>
-              </li>
-              <li>
-                <CustomLink to="/production/nuts">
-                  {t("footer.nuts")}
+                <CustomLink to="/branches/oltiariq">
+                  Oltiariq filiali
                 </CustomLink>
               </li>
             </ul>
@@ -89,40 +83,40 @@ const Footer = () => {
                   <CiLocationOn />
                 </span>
                 <address className="not-italic text-center">
-                  {t("footer.address")}
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, quod!
                 </address>
               </li>
               <li>
                 <Link
-                  to="tel:998934729500"
+                  to="tel:998900000000"
                   className="flex items-center gap-2"
                 >
                   <span>
                     <SlPhone />
                   </span>
-                  +998 93-472-95-00
+                  +998 90-000-00-00
                 </Link>
               </li>
               <li>
                 <Link
-                  to="tel:+998 99-754-77-33"
+                  to="tel:+998 90-000-00-00"
                   className="flex items-center gap-2"
                 >
                   <span>
                     <SlPhone />
                   </span>
-                  +998 99-754-77-33
+                  +998 90-000-00-00
                 </Link>
               </li>
               <li>
                 <Link
-                  to="mailto:sales@milmax.uz"
+                  to="mailto:al-xorazmiyschool@gmail.com"
                   className="flex items-center gap-2"
                 >
                   <span>
                     <IoMailOutline />
                   </span>
-                  sales@milmax.uz
+                  al-xorazmiyschool@gmail.com
                 </Link>
               </li>
             </ul>

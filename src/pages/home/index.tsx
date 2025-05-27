@@ -6,6 +6,8 @@ import AgroQuality from "./components/quality"
 import NewsPage from "../news";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import HomeReception from "./components/reception";
+import Experience from "./components/experience";
 const HomePage = () => {
 
   const location = useLocation();
@@ -28,6 +30,8 @@ const HomePage = () => {
       <AgroProcess />
       <AgroQuality />
       <OurProducts />
+      <HomeReception/>
+      <Experience/>
       <NewsPage />
     </>
   );
