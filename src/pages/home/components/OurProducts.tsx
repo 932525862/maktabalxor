@@ -45,7 +45,7 @@ const OurProducts = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.3 }}
-              className="absolute bottom-4 left-0 right-0 bg-white text-[#7f103a] font-bold text-center py-3 px-5 rounded-md text-lg md:text-2xl"
+              className="absolute bottom-4 left-0 right-0 bg-white text-[#166534E6] font-bold text-center py-3 px-5 rounded-md text-lg md:text-2xl"
             >
               {product.name}
             </motion.div>

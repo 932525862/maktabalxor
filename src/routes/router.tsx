@@ -9,7 +9,7 @@ import {
   DryFruits,
   NewsSinglePage,
   NutsPage,
-  ProductsPage,
+  BranchesPage,
   Dehydrated ,
   Frozen,
   Frozend
@@ -72,7 +72,7 @@ const Router = [
         path: "/branches",
         element: (
           <Suspense fallback={<Loading />}>
-            <ProductsPage />
+            <BranchesPage />
           </Suspense>
         ),
       },

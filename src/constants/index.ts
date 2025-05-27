@@ -1,4 +1,5 @@
 import img from "../assets/allimg/010.jpg"
+import oltiariq from "../assets/allimg/011.jpg";
 
 export const news = [
     {
@@ -37,3 +38,8 @@ export const news = [
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt vel tempora quis in aliquam sint saepe sit sapiente id officia dolor libero adipisci, voluptatibus, esse voluptatem ut, reprehenderit illo aut accusamus eos?"
     }
 ]
+
+export const branches = [
+    { id: 1, name: "Oltiariq filiali", image: oltiariq, link: '/branches/oltiariq' },
+    { id: 2, name: "Oltiariq filiali", image: oltiariq, link: '/branches/oltiariq' },
+  ];
