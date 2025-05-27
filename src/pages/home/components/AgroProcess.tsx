@@ -71,7 +71,7 @@ const AgroProcess = () => {
               <img
                 src={img}
                 alt="O'qituvchi va o'quvchilar"
-                className="rounded-lg object-cover max-h-[300px] w-full xl:max-h-full"
+                className="rounded-lg object-cover max-h-[300px] w-full xl:max-h-full xl:h-full"
               />
             </motion.div>
           </div>

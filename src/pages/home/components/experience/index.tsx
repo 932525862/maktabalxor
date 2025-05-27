@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
 import sport from "../../../../assets/allimg/sports.jpg"
 import travel from "../../../../assets/allimg/travel.jpeg"
 import tadbir from "../../../../assets/allimg/tadbir.jpg"
@@ -25,7 +24,6 @@ const Card = ({ icon, title, items, image, bgColor, textColor }) => (
     </div>
   );
 const Experience = () => {
-  const navigate = useNavigate(); 
 
   return (
     <div className="flex flex-col justify-center items-center py-10 px-4 md:px-10 bg-gray-100 scroll-smooth" id='production'>
