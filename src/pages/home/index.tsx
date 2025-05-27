@@ -2,7 +2,6 @@ import AboutUs from "./components/about";
 import Hero from "./components/hero";
 import AgroProcess from "./components/AgroProcess"
 import OurProducts from "./components/OurProducts"
-import WorldMap from "../about/WorldMap"
 import AgroQuality from "./components/quality"
 import NewsPage from "../news";
 import { useLocation } from "react-router-dom";
@@ -30,7 +29,6 @@ const HomePage = () => {
       <AgroQuality />
       <OurProducts />
       <NewsPage />
-      <WorldMap />
     </>
   );
 };

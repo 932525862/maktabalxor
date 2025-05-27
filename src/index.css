@@ -28,7 +28,7 @@ html {
 
 .ant-float-btn-group {
   button {
-    background-color: #800c3a;
+    background-color: #166534E6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +55,7 @@ html {
   }
 }
 .ant-btn:hover {
-  background-color: #800c3a !important;
+  background-color: #166534E6 !important;
   opacity: 0.9 !important;
   color: white !important;
 }
@@ -67,3 +67,13 @@ body {
 .drawer__link {
   color: black !important;
 }
+
+.inner-green-shadow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* Faqat pastki ichki soya uchun: x-yo‘nalish = 0, y-yo‘nalish = -20px (yuqoriga), blur va spread bilan o‘ynash mumkin */
+  box-shadow: inset 0 -200px 50px -30px #166534a8;
+  z-index: 10;
+}
+

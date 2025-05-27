@@ -11,7 +11,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({ to, children, className = "" })
     <NavLink
       to={to}
       className={({ isActive }) =>
-        `${isActive ? "text-[#7f103a]" : ""} transition-all hover:text-[#7f103a] ${className}`
+        `${isActive ? "text-[#166534E6]" : ""} transition-all hover:text-[#166534E6] ${className}`
       }
     >
       {children}

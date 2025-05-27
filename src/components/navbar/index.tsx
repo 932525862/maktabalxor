@@ -30,12 +30,15 @@ const Navbar = ({ open, setOpen }: PropsNavbar) => {
             <CustomLink to="/news">{t("navbar.news")}</CustomLink>
           </li>
           <li>
-            <CustomLink to="/production">
+            <CustomLink to="/branches">
               {t("navbar.product")}
             </CustomLink>
           </li>
           <li>
             <CustomLink to="/contact">{t("navbar.contact")}</CustomLink>
+          </li>
+          <li>
+            <CustomLink to="/reception">{t("navbar.reception")}</CustomLink>
           </li>
         </ul>
       </div>
@@ -54,13 +57,16 @@ const Navbar = ({ open, setOpen }: PropsNavbar) => {
           <li onClick={onClose} className="!text-center">
             <Link
               className="!text-[22px] !font-semibold !text-black hover:!text-[#7f103a] !text-center"
-              to="/production"
+              to="/branches"
             >
               {t("navbar.product")}
             </Link>
           </li>
           <li onClick={onClose} className="!text-center">
             <Link className="!text-[22px] !font-semibold !text-black hover:!text-[#7f103a] !text-center" to="/contact">{t("navbar.contact")}</Link>
+          </li>
+          <li onClick={onClose} className="!text-center">
+            <Link className="!text-[22px] !font-semibold !text-black hover:!text-[#7f103a] !text-center" to="/reception">{t("navbar.reception")}</Link>
           </li>
         </ul>
       </Drawer >

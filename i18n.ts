@@ -5,7 +5,6 @@ import Backend from "i18next-http-backend";
 import enTranslation from "./src/locales/en.json";
 import ruTranslation from "./src/locales/ru.json";
 import uzTranslation from "./src/locales/uz.json";
-import ArTranslation from "./src/locales/ar.json";
 
 let language = localStorage.getItem("i18nextLng") || "en"
 
@@ -23,9 +22,6 @@ i18n
       },
       uz: {
         translation: uzTranslation,
-      },
-      ar: {
-        translation: ArTranslation,
       }
     },
     fallbackLng: language,

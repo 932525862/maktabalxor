@@ -4,7 +4,8 @@
     "about": "Biz haqimizda",
     "contact": "Aloqa",
     "news": "Yangiliklar",
-    "product": "Mahsulotlar"
+    "product": "Bizning filiallarimiz",
+    "reception": "Qabul bo'limi"
   },
   "about": {
     "title": "KOMPANIYA HAQIDA",
@@ -23,7 +24,7 @@
     "titleR2": "ISSIQXONA KOMPLEKSLARI",
     "titleR3": "QISHLOQ XO‘JALIK YERLARI",
     "titleR4": "XODIMLAR",
-    "titleP": "Bizning mahsulotimiz",
+    "titleP": "Bizning filiallarimiz",
     "titleP1": "Yangi mevalar",
     "titleP2": "Quritilgan mevalar",
     "titleP3": "Yong'oqlar",
@@ -45,11 +46,11 @@
     "homeB": "Milmax Oʻzbekistondan butun dunyo bo‘ylab quritilgan va yangi mevalarni eksport qiladi.",
     "homeB1": "O‘zbekistondan quritilgan va yangi mevalarni yetkazib beramiz. Sizga qulay bo‘lgan yetkazib berish shartlarini taklif qilamiz hamda mahsulot sifati va yaxlitligiga to‘liq kafolat beramiz.",
     "homeBB": "Batafsil ma'lumot",
-    "homeAt": "Milmax haqida",
+    "homeAt": "Al-Xorazmiy maktabi haqida",
     "homeAp": "O‘zbekistonda yetishtirilgan quritilgan va yangi mevalar butun dunyoga eksport qilamiz. Mahsulotlarimizning yuqori sifatini ta'minlash uchun biz har bir bosqichni, jumladan, mahalliy dehqonlar va bog‘bonlar bilan bevosita hamkorlik qilib, diqqat bilan nazorat qilamiz.",
     "homeAp1": "Qishloq xo‘jaligi mahsulotlarini butun dunyoga yetkazib berish bo‘yicha yillarning tajribasi",
     "homeAp2": "O'zbekiston bo'ylab fermalarning hamkorlari",
-    "milmax": "Milmax qanday ishlaydi?",
+    "milmax": "Nima uchun bizning maktab?",
     "milmax1": "Biz mijozlar talabiga asoslanib, hamkor fermerlarimizdan qishloq xo‘jaligi mahsulotlarini tanlaymiz.",
     "milmax2": "Biz tanlangan mahsulotlarni sifat va zararlanish uchun tekshiramiz.",
     "milmax3": "Tekshiruvdan so'ng, mahsulotlarni ekologik toza, mustahkam va keng idishlarga o'ralamiz.",
@@ -59,11 +60,11 @@
     "milmaxqt": "Nima uchun Milmax mahsulotlari sifatli? Keling, birgalikda buning sabablarini ko'rib chiqamiz.",
     "milmaxq1": "Unumdor yerlar",
     "milmaxq1p": "O'zbekiston qishloq xo'jaligida unumdor yerlar muhim rol o'ynaydi. Ushbu yerlar ekinlarning samarali o'sishini ta'minlaydi. O'zbekistonning ko'plab hududlari tabiiy sharoitlar va iqlim jihatidan unumdorlikka ega bo'lib, fermerlar uchun yuqori hosil olish imkoniyatini yaratadi. Milmax mahsulotlari ishlab chiqarishda, aynan shu unumdor yerlar asosida yetishtirilgan xom ashyo ishlatiladi, bu esa mahsulotning sifatini oshiradi.",
-    "milmax2": "Yuqori sifatli mahsulotlar",
+   
     "milmax2p": "Milmax mahsulotlari yuqori sifatli bo'lishi uchun zamonaviy texnologiyalar va ilg'or ishlab chiqarish jarayonlari qo'llaniladi. O'zbekistonning qishloq xo'jaligi sohasidagi uzoq yillik tajribasi va ilmiy yondashuvlar mahsulotlar sifatini ta'minlashda katta rol o'ynaydi. Mahsulotlar oziq-ovqat xavfsizligi va ekologik talablarni inobatga olgan holda ishlab chiqariladi.",
-    "milmax3": "Tajribali xodimlar",
+   
     "milmax3p": "Milmax kompaniyasining mahsulotlarini ishlab chiqarishda tajribali mutaxassislar va agronomlar faol ishtirok etadi. O'zbekiston qishloq xo'jaligi sohasida o'z vaqtida olingan tajriba va bilimlar, aynan Milmaxning mahsulotlarining sifatini oshiradi. Mutaxassislar yerning tabiiy sharoitlarini to'g'ri baholab, mahsulotni samarali yetishtirishda yordam beradi.",
-    "milmax4": "Jahon standartlariga javob beruvchi zavod",
+ 
     "milmax4p": "Milmax mahsulotlari yuqori sifatli texnologiyalar asosida ishlab chiqariladi. Zavodlar jahon standartlariga javob beradigan uskunalar bilan jihozlangan bo'lib, bu mahsulotlarning xalqaro bozorga mosligini ta'minlaydi. O'zbekistonning qishloq xo'jaligi infratuzilmasi va zamonaviy zavodlari ushbu jarayonni muvaffaqiyatli amalga oshirish imkonini beradi.",
     "contactB": "Yuborish",
     "contactM": "Ma'lumotlaringiz muvaffaqiyatli yuborildi. Tez orada siz bilan bog'lanamiz."
@@ -74,7 +75,7 @@
   },
   "products": {
     "dry": "Quritilgan mevalar",
-    "wet": "Ho'l mevalar",
+    "wet": "Oltiariq filiali",
     "nuts": "Yong'oqlar",
     "btn": "Ariza Qoldirish",
     "titelPrB": "Orqaga qaytish",

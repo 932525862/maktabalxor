@@ -1,14 +1,13 @@
 import { Carousel } from "antd";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import hero1 from "../../../../assets/allimg/2.png";
+import hero1 from "../../../../assets/allimg/2.jpg";
 import hero2 from "../../../../assets/allimg/5.jpg";
 import hero3 from "../../../../assets/allimg/6.jpg";
 import hero4 from "../../../../assets/allimg/7.jpg";
 import hero5 from "../../../../assets/allimg/010.jpg";
-import hero6 from "../../../../assets/allimg/011.jpg"
-
+import hero6 from "../../../../assets/allimg/011.jpg";
+import CountUp from "react-countup";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -18,9 +17,14 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent z-10" />
 
       <Carousel autoplay effect="fade" dots={false} className="relative z-0">
-        {[hero1,hero5, hero2, hero3, hero4,hero6].map((image, index) => (
+        {[hero1, hero5, hero2, hero3, hero4, hero6].map((image, index) => (
           <div key={index} className="h-[calc(100vh-70px)]">
-            <img className="w-full h-full object-cover" src={image} alt={`slide-${index}`} />
+            <img
+              className="w-full h-full object-cover"
+              src={image}
+              alt={`slide-${index}`}
+            />
+            
           </div>
         ))}
       </Carousel>
@@ -33,19 +37,49 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="max-w-[700px] text-white"
         >
-          <h1 className="text-[36px] text-center md:text-left md:text-[56px] font-bold leading-[1.2] drop-shadow-lg">
-            {t("home.homeB")}
+          <h1 className="text-4xl lg:text-5xl font-bold">
+            {t("Biz bilan boshlang")}
           </h1>
-          <p className="mt-4 text-[18px] text-center md:text-left md:text-[20px] font-light leading-[1.6] drop-shadow-md">
-          {t("home.homeB1")}
-          </p>
 
-          <Link
-            to={"/about"}
-            className="flex justify-center md:w-max w-full border border-white py-5 px-15 rounded-[8px] text-[18px] text-white font-medium transition hover:bg-[#7f103a] hover:text-white mt-5"
-          >
-            {t("home.homeBB")}
-          </Link>
+          {/* Counterlar */}
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-white font-semibold text-center">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md">
+              <h4 className="text-4xl lg:text-5xl text-yellow-400">
+                <CountUp end={1500} duration={3} separator="," />
+              </h4>
+              <p className="mt-2 text-base">+ o'quvchilar</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md">
+              <h4 className="text-4xl lg:text-5xl text-green-400">
+                <CountUp end={20} duration={3} />
+              </h4>
+              <p className="mt-2 text-base">ta filial</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md">
+              <h4 className="text-4xl lg:text-5xl text-blue-400">
+                <CountUp end={10} duration={3} />
+              </h4>
+              <p className="mt-2 text-base">yillik tajriba</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md">
+              <h4 className="text-4xl lg:text-5xl text-pink-400">
+                <CountUp end={50} duration={3} separator="," />
+              </h4>
+              <p className="mt-2 text-base">+ to‘garaklar soni</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md">
+              <h4 className="text-4xl lg:text-5xl text-orange-400">
+                <CountUp end={100} duration={3} />
+              </h4>
+              <p className="mt-2 text-base">sinf xonalari</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md">
+              <h4 className="text-4xl lg:text-5xl text-cyan-400">
+                <CountUp end={100} duration={3} />
+              </h4>
+              <p className="mt-2 text-base">+ bitiruvchilar har yili</p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

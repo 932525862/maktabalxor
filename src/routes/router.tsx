@@ -69,7 +69,7 @@ const Router = [
         ),
       },
       {
-        path: "/production",
+        path: "/branches",
         element: (
           <Suspense fallback={<Loading />}>
             <ProductsPage />
@@ -77,7 +77,7 @@ const Router = [
         ),
       },
       {
-        path: "/production/wet",
+        path: "/branches/oltiariq",
         element: (
           <Suspense fallback={<Loading />}>
             <WetFruits />

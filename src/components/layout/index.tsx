@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Header from "../header";
 import Footer from "../footer";
 import { useEffect } from "react";
+import { FixedSocial } from "../fixedSocial";
 
 
 const Layout = () => {
@@ -21,6 +22,7 @@ const Layout = () => {
     <>
       <Header />
       <main className="mt-[75px]">
+        <FixedSocial/>
         <Outlet />
       </main>
       <Footer />

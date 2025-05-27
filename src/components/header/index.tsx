@@ -9,7 +9,6 @@ import { useLanguage } from "../../context/locales";
 import uzImg from "../../assets/flags/uz.png";
 import ruImg from "../../assets/flags/ru.png";
 import enImg from "../../assets/flags/en.png";
-import arImg from "../../assets/flags/sa.png";
 
 const Header = () => {
 
@@ -56,8 +55,8 @@ const Header = () => {
       <div className="container">
         <div className="flex justify-between items-center">
           <div className="flex items-center justify-between gap-x-20">
-            <Link to="/" className="w-[100px] sm:w-[150px]">
-              <img src={logo} alt="milmax brand logo" />
+            <Link to="/" className="w-[80px] sm:w-[80px]">
+              <img src={logo} alt="school brand logo" />
             </Link>
 
             <Navbar open={open} setOpen={setOpen} />
@@ -95,19 +94,9 @@ const Header = () => {
                       Ru
                     </span>
                   ),
-                },
-                {
-                  value: "ar",
-                  label: (
-                    <span className="flex items-center justify-center">
-                      <img src={arImg} alt="Arabic" width="25px" style={{ marginRight: 8 }} />
-                      Ar
-                    </span>
-                  ),
-                },
+                }
               ]}
             />
-
             <button className="block md:hidden" onClick={() => setOpen(true)}>
               <AlignRightOutlined />
             </button>
