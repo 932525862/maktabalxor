@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Img1 from "../../assets/allimg/hist1.png";
-import Img2 from "../../assets/allimg/hist2.png";
+import Img1 from "../../assets/allimg/012.jpg";
+
 import { useTranslation } from "react-i18next";
 const AgroGenesis: React.FC = () => {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ const AgroGenesis: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-3xl sm:text-3xl md:text-2xl lg:text-3xl font-serif font-bold text-[#7f103a] mb-6">{t("about.titleQ1")}</h2>
+          <h2 className="text-3xl sm:text-3xl md:text-2xl lg:text-3xl font-serif font-bold text-[#186e38] mb-6">{t("about.titleQ1")}</h2>
           <p className="text-lg font-sans text-gray-700 leading-relaxed">
           {t("about.titleQ1p")}
           </p>
@@ -46,7 +46,7 @@ const AgroGenesis: React.FC = () => {
           transition={{ duration: 1 }}
         >
           <img
-            src={Img2}
+            src={Img1}
             alt="Middle Ages"
             className="object-cover w-full h-72 md:h-80"
           />
@@ -58,7 +58,7 @@ const AgroGenesis: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl sm:text-3xl md:text-2xl lg:text-3xl font-serif font-bold text-[#7f103a] mb-6">{t("about.titleQ2")}</h2>
+          <h2 className="text-4xl sm:text-3xl md:text-2xl lg:text-3xl font-serif font-bold text-[#186e38] mb-6">{t("about.titleQ2")}</h2>
           <p className="text-lg font-sans text-gray-700 leading-relaxed">
           {t("about.titleQ2p")}
           </p>

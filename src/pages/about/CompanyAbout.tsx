@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Patr from "../../assets/allimg/3.png";
+import Patr from "../../assets/allimg/about al.png";
 import { useTranslation } from "react-i18next";
 
 const CompanyAbout: React.FC = () => {
@@ -40,14 +40,14 @@ const CompanyAbout: React.FC = () => {
             backgroundRepeat: "no-repeat",
           }}
         ></div>
-        <span className="relative text-2xl md:text-6xl lg:text-7xl ">{t("about.title")}</span>
+        {/* <span className="relative text-2xl md:text-6xl lg:text-7xl ">{t("about.title")}</span> */}
       </div>
       <div className="max-w-6xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900">
             {t("about.title2")}
           </h1>
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#7f103a] mt-4">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#186e38] mt-4">
             {t("about.title3")}
           </h2>
           <p className="text-gray-700 text-lg mt-6">

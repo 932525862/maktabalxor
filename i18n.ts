@@ -6,7 +6,7 @@ import enTranslation from "./src/locales/en.json";
 import ruTranslation from "./src/locales/ru.json";
 import uzTranslation from "./src/locales/uz.json";
 
-let language = localStorage.getItem("i18nextLng") || "en"
+let language = localStorage.getItem("i18nextLng") || "uz"
 
 i18n
   .use(Backend)

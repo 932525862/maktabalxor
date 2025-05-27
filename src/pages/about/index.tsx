@@ -1,16 +1,21 @@
 import CompanyAbout from "./CompanyAbout"
 import AgroGenesis from "./AgroGenesis"
 import Statistics from "./Statistics"
-import WorldMap from "./WorldMap"
-import OurProducts from "../home/components/OurProducts"
+// import WorldMap from "./WorldMap"
+
+import Fotogallery from "./Fotogallery"
+
+
 
 const AboutPage = () => {
   return <div>
     <CompanyAbout/>
     < AgroGenesis/>
     <Statistics/>
-    <OurProducts/>
-    <WorldMap/>
+ 
+    <Fotogallery/>
+   
+    {/* <WorldMap/> */}
   </div>;
 };
 
