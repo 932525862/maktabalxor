@@ -18,8 +18,8 @@ const Statistics: React.FC = () => {
 
   // stats massivini komponent ichida aniqlaymiz
   const stats: Stat[] = [
-    { value: "14,000 m²", label: t("about.titleR1") },
-    { value: "202,000 m²", label: t("about.titleR2") },
+    { value: "14,000", label: t("about.titleR1") },
+    { value: "202 m²", label: t("about.titleR2") },
     { value: "1M m²", label: t("about.titleR3") },
     { value: "500+", label: t("about.titleR4") },
   ];
@@ -39,7 +39,7 @@ const Statistics: React.FC = () => {
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeInUp}
           >
-            <p className="text-[#7f103a] text-4xl font-bold group-hover:scale-105 group-hover:text-orange-700 transition transform duration-300">
+            <p className="text-[#186e38] text-4xl font-bold group-hover:scale-105 group-hover:text-orange-700 transition transform duration-300">
               {stat.value}
             </p>
             <p className="text-gray-600 text-lg font-medium mt-2 group-hover:text-gray-800 transition duration-300">
