@@ -6,13 +6,9 @@ import {
   HomePage,
   Layout,
   WetFruits,
-  DryFruits,
   NewsSinglePage,
-  NutsPage,
   BranchesPage,
-  Dehydrated ,
-  Frozen,
-  Frozend
+  AdmissionPage
 } from "./import-url";
 import { Suspense } from "react";
 import Loading from "../loading";
@@ -85,45 +81,13 @@ const Router = [
         ),
       },
       {
-        path: "/production/dry",
+        path: "/reception",
         element: (
           <Suspense fallback={<Loading />}>
-            <DryFruits />
+            <AdmissionPage />
           </Suspense>
         ),
       },
-      {
-        path: "/production/dehydrated",
-        element: (
-          <Suspense fallback={<Loading />}>
-            < Dehydrated/>
-          </Suspense>
-        ),
-      },
-      {
-        path: "/production/frozen",
-        element: (
-          <Suspense fallback={<Loading />}>
-            < Frozen/>
-          </Suspense>
-        ),
-      },
-      {
-        path: "/production/frozend",
-        element: (
-          <Suspense fallback={<Loading />}>
-            < Frozend/>
-          </Suspense>
-        ),
-      },
-      {
-        path: "/production/nuts",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <NutsPage />
-          </Suspense>
-        ),
-      }
     ],
   },
 ];
