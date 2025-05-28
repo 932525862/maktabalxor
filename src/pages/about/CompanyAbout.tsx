@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Patr from "../../assets/allimg/about al.png";
+import Patr from "../../assets/allimg/abo.png";
 import { useTranslation } from "react-i18next";
 
 const CompanyAbout: React.FC = () => {
